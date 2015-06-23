@@ -1,0 +1,6 @@
+$ cat .gitignore
+/DATA_AWATER/**
+/DATA_BWATER/**
+/caffe/**
+*.npy
+*.pkl

@@ -1,0 +1,54 @@
+\begin{thebibliography}{7}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Barnes and Milner(2005)]{barnes2005drifting}
+D.~Barnes and P.~Milner.
+\newblock Drifting plastic and its consequences for sessile organism dispersal
+  in the atlantic ocean.
+\newblock \emph{Marine Biology}, 146\penalty0 (4):\penalty0 815--825, 2005.
+
+\bibitem[Girshick et~al.(2014)Girshick, Donahue, Darrell, and
+  Malik]{girshick2014rich}
+R.~Girshick, J.~Donahue, T.~Darrell, and J.~Malik.
+\newblock Rich feature hierarchies for accurate object detection and semantic
+  segmentation.
+\newblock In \emph{Computer Vision and Pattern Recognition (CVPR), 2014 IEEE
+  Conference on}, pages 580--587. IEEE, 2014.
+
+\bibitem[Jia et~al.(2014)Jia, Shelhamer, Donahue, Karayev, Long, Girshick,
+  Guadarrama, and Darrell]{jia2014caffe}
+Y.~Jia, E.~Shelhamer, J.~Donahue, S.~Karayev, J.~Long, R.~Girshick,
+  S.~Guadarrama, and T.~Darrell.
+\newblock Caffe: Convolutional architecture for fast feature embedding.
+\newblock \emph{arXiv preprint arXiv:1408.5093}, 2014.
+
+\bibitem[Krizhevsky et~al.(2012)Krizhevsky, Sutskever, and
+  Hinton]{krizhevsky2012imagenet}
+A.~Krizhevsky, I.~Sutskever, and G.~E. Hinton.
+\newblock Imagenet classification with deep convolutional neural networks.
+\newblock In \emph{Advances in neural information processing systems}, pages
+  1097--1105, 2012.
+
+\bibitem[Moore and Phillips(2011)]{moore2011plastic}
+C.~C. Moore and C.~Phillips.
+\newblock Plastic ocean.
+\newblock \emph{How a sea captain’s chance discovery launched a determined
+  quest to save the oceans. Avery, New York}, 2011.
+
+\bibitem[Razavian et~al.(2014)Razavian, Azizpour, Sullivan, and
+  Carlsson]{razavian2014cnn}
+A.~S. Razavian, H.~Azizpour, J.~Sullivan, and S.~Carlsson.
+\newblock Cnn features off-the-shelf: an astounding baseline for recognition.
+\newblock In \emph{Computer Vision and Pattern Recognition Workshops (CVPRW),
+  2014 IEEE Conference on}, pages 512--519. IEEE, 2014.
+
+\bibitem[Zeiler and Fergus(2014)]{zeiler2014visualizing}
+M.~D. Zeiler and R.~Fergus.
+\newblock Visualizing and understanding convolutional networks.
+\newblock In \emph{Computer Vision--ECCV 2014}, pages 818--833. Springer, 2014.
+
+\end{thebibliography}

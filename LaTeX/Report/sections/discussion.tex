@@ -1,0 +1,35 @@
+\section{Discussion}
+\label{sec:Discussion}
+%intepretatie uit conclusie, beantwoord hypothese,
+\todo{kijken of subsections nodig zijn}
+This project tried to begin the build of autonomous agents that could clean up the ocean of plastic.
+An agent was not build, however a sizable start was made with the vision of such an agent.
+Several state-of-the-art algorithms were used on a dataset of images containing floating plastic, animals, both or none to classify the images in one of the classes.
+One of the algorithms -- the Feed Foreward Network -- trained on the second-to-last layer of a Convolutional Neural Network, did not work satisfactory.
+
+There are several possible reasons the Feed Forward Network used in this project did not perform well.
+Because the implementation was not part of a \texttt{Python} library, there could be bugs.
+This however does not seem probable, because the implementation was tested with a xor dataset which performed properly.
+
+More likely is the normalisation of the data.
+The second-to-last layer of the CNN was not normalised, while the FNN implementation used ${tanh}()$ to approximate the Sigmoid function.
+However, even a normalisation of the data did not affect the outcome.
+Bottom-line, the network was not able to learn the classes from the data.
+
+The accurate results of the Support Vector Machine could be expected.
+SVMs are known to work well in high dimensional data, as long as the amount of classes to be trained on is small.
+The 4096 vector of the second-to-last layer of the CNN only needed to be trained on two classes, for which both had an SVM trained on ether showing or not.
+
+\todo{stukje over evaluatie onderzoek}
+
+\todo{stukje over vervolgonderzoek, oa verbeteren plastic-herkenning (ook locatie) en maken van autonomous agent voor schepen}
+
+
+
+This project is one of the many recent projects that show the possibilities with Convolutional Neural Networks.
+Besides that, it also shows how the Artificial Intelligence can be used to help solving environmental problems.
+I do not think the hippie movement in the 60s could imagine that AI could solve their problems for them today.
+
+%\subsection{Future research}
+%Evatuatie onderzoek, vervolgonderzoek
+

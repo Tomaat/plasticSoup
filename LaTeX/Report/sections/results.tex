@@ -1,0 +1,128 @@
+\section{Results}
+\label{sec:Results}
+%In this section part of the output of the \texttt{Python} code is located.
+%The full tables of output can be found in Appendix \ref{sec:ap-out}, however, only the more interesting parts are shown in this section.
+
+
+%\subsection{Principal Component Analysis}
+%\label{sec:Results-PCA}
+%...amount of principal components of 1000...
+
+%\subsection{Feed Forward Network}
+%\label{sec:Results-FFN}
+%Several different parameters of the Feed Forward Network were used.
+%However, the output of each run is always the same, irrespectively the input-vector.
+
+\subsection{Pipeline}
+\label{sec:Results-SVM}
+The outcome of the different parameters the pipeline was tested with, can be found in appendix \ref{sec:ap-out}.
+Several details of the raw output are visualised and shown in this section.
+
+The accuracy shown in this section is calculated by dividing the correct labled images by the total amount of images. Or in formula form:
+\[
+\frac{\#(Outcome_{True}\,and\,Label_{True})+\#(Outcome_{False}\,and\,Label_{False})}{\#tested\,images}
+\]
+The time that has been taken into account is the difference in \textit{System time} from beginning the training or testing and finishing.
+Because the data from the CNN was saved on a hard drive, that time is not included in these figures.
+
+Figure \ref{fig:c14} shows how each of the SVM model performes and what time it took to train and test.
+All these tests were fitted on the data of the under-water viewpoint.
+The blue dots represent the accuracy, that can be read out on the left y-axis.
+The green and red bars represent time taken to train and test respectively, that can be read out on the right y-axis.
+Each instance on the x-axis is one of the twenty different hyperplanes.
+
+In figure \ref{fig:lin1} the results of the orders of magnitude of the train size are shown when a linear SVM was used. The figure consists of two graps, the left one shows the accuracy on each class individually and the total accuracy, the right one shows the time taken to test and train. The x-axis shows the size of the train-set on a logarithmic scale.
+In other words, the first column of the first four graphs is plotted in a single image, only using a different set of test-data.
+
+In figure \ref{fig:lin2} there is moreover a graph of a linear SVM tested on several orders of magnitude of train data.
+The tests in this figure were conducted on a combination of both viewpoints.
+
+\begin{figure}[h!tb]
+\centering
+\ifx\showfig\undefined
+\input{graphs/c14.tex} 
+\input{graphs/c140.tex}
+\input{graphs/c1400.tex}
+\input{graphs/c14000.tex} \fi
+\caption{Graph of the different parameters of the SVM}
+\label{fig:c14}
+\end{figure}
+
+\begin{figure}[h!tb]
+\centering
+\ifx\showfig\undefined
+\input{graphs/lin1.tex} \fi
+\caption{Graph of time and accuracy of a linear SVM on different sizes data of the under water viewpoint. The test-data consisted of 2061 images.}
+\label{fig:lin1}
+\end{figure}
+
+\begin{figure}[h!tb]
+\centering
+\ifx\showfig\undefined
+\input{graphs/lin2.tex} \fi
+\caption{Graph of time and accuracy of a linear SVM on different sizes data of the under water viewpoint. The test-data consisted of 18583 images.}
+\label{fig:lin2}
+\end{figure}
+
+\subsection{Detecting location of plastic}
+\label{sec:Results-sub}
+As stated in section \ref{sec:Method-sub} the localisation of the plastic within the image could not be evaluated truly.
+However, several images have been pulled through the pipeline and the results can be seen in figure \ref{fig:sub-matrix}.
+The middle column in the figure shows the tested images.
+The more red in the figure on the right, the more confidence the program has in detecting image on that location.
+The images on the left represent the same with the greenness for locating animals.
+
+\begin{figure}[h!tb]
+\centering
+\ifx\showfig\undefined
+%\centerline{
+\begin{minipage}{1.3\textwidth}
+\def\segwidth{.2\textwidth}
+\begin{tabular}{ccc}
+
+\includegraphics[keepaspectratio=true,width=\segwidth]{images/segment/6_01__animals__.png} &
+\includegraphics[keepaspectratio=true,width=\segwidth]{images/segment/6_01__image__.png} &
+\includegraphics[keepaspectratio=true,width=\segwidth]{images/segment/6_01__plastic__.png} \\
+
+\includegraphics[keepaspectratio=true,width=\segwidth]{images/segment/31_11__animals__.png} &
+\includegraphics[keepaspectratio=true,width=\segwidth]{images/segment/31_11__image__.png} &
+\includegraphics[keepaspectratio=true,width=\segwidth]{images/segment/31_11__plastic__.png} \\
+
+\includegraphics[keepaspectratio=true,width=\segwidth]{images/segment/253_01__animals__.png} &
+\includegraphics[keepaspectratio=true,width=\segwidth]{images/segment/253_01__image__.png} &
+\includegraphics[keepaspectratio=true,width=\segwidth]{images/segment/253_01__plastic__.png} \\
+
+\includegraphics[keepaspectratio=true,width=\segwidth]{images/segment/299_00__animals__.png} &
+\includegraphics[keepaspectratio=true,width=\segwidth]{images/segment/299_00__image__.png} &
+\includegraphics[keepaspectratio=true,width=\segwidth]{images/segment/299_00__plastic__.png} \\
+
+\includegraphics[keepaspectratio=true,width=\segwidth]{images/segment/401_10__animals__.png} &
+\includegraphics[keepaspectratio=true,width=\segwidth]{images/segment/401_10__image__.png} &
+\includegraphics[keepaspectratio=true,width=\segwidth]{images/segment/401_10__plastic__.png} \\
+
+\includegraphics[keepaspectratio=true,width=\segwidth]{images/segment/701_11__animals__.png} &
+\includegraphics[keepaspectratio=true,width=\segwidth]{images/segment/701_11__image__.png} &
+\includegraphics[keepaspectratio=true,width=\segwidth]{images/segment/701_11__plastic__.png} \\
+
+\includegraphics[keepaspectratio=true,width=\segwidth]{images/segment/2737_10__animals__.png} &
+\includegraphics[keepaspectratio=true,width=\segwidth]{images/segment/2737_10__image__.png} &
+\includegraphics[keepaspectratio=true,width=\segwidth]{images/segment/2737_10__plastic__.png} \\
+
+\includegraphics[keepaspectratio=true,width=\segwidth]{images/segment/4409_01__animals__.png} &
+\includegraphics[keepaspectratio=true,width=\segwidth]{images/segment/4409_01__image__.png} &
+\includegraphics[keepaspectratio=true,width=\segwidth]{images/segment/4409_01__plastic__.png} \\
+
+\includegraphics[keepaspectratio=true,width=\segwidth]{images/segment/5053_10__animals__.png} &
+\includegraphics[keepaspectratio=true,width=\segwidth]{images/segment/5053_10__image__.png} &
+\includegraphics[keepaspectratio=true,width=\segwidth]{images/segment/5053_10__plastic__.png} \\
+
+\includegraphics[keepaspectratio=true,width=\segwidth]{images/segment/20607_01__animals__.png} &
+\includegraphics[keepaspectratio=true,width=\segwidth]{images/segment/20607_01__image__.png} &
+\includegraphics[keepaspectratio=true,width=\segwidth]{images/segment/20607_01__plastic__.png}
+	\end{tabular}
+\end{minipage}
+%} \fi
+\fi
+\caption{Example of outcome of running an image through the segmented image pipeline. Green locates the animals and red the plastic}
+\label{fig:sub-matrix}
+\end{figure}

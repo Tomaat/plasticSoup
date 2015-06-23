@@ -1,0 +1,151 @@
+\section{Method}
+\label{sec:Method}
+%This section describes the steps taken in this project. First the collection and the annotation of the dataset is explained. Thereafter the used algorithms are described in detail. The code used in this project can be found in appendix \ref{sec:ap-code}
+This section describes the steps taken in this project.
+First the pipeline is explained, after which the details of the implementation are stated.
+
+\subsection{Pipeline}
+\label{sec:Method-pipeline}
+As stated in section \ref{sec:Theory} a Convolutional Neural Network has been used as a feature-vector of the image, after which a Support Vector Machine was used for classification.
+
+Several libraries exist that implement a CNN.
+In this project the choice is made to use Caffe \citep{jia2014caffe}.
+This framework is open source and free to use.
+Moreover it has a large community maintaining and developing, can run both on CPU and GPU and has an interface to \texttt{Python}.
+
+The Caffe framework has several pre-trained CNNs.
+In this project the Caffenet network is used, which is an implementation of Alexnet \citep{krizhevsky2012imagenet}. Caffenet is trained on the \textit{ilsvrc12} dataset, however in contrary to Alexnet, the order of pooling and normalisation is swapped. \citeneed
+
+The output of Caffenet is a $1\times1000$ normalised vector, representing the confidence of the respective class.
+However, the second-to-last layer of the network is used as feature-vector. This layer is a $10\times4096$ vector; $10$ rows because the network uses five overlapping `sub-images' (four corners and one centre) and their mirrored image, to improve accuracy.
+Each row of $4096$ numbers is an abstract representation of the image, trained by the network.
+To reduce complexity, the mean over the `sub-images' is used to compress the second-to-last layer data in a $1\times4096$ vector.
+
+This 4096 dimensional vector is then used as the space for the SVM.
+The three possible hyperplanes as described in section \ref{sec:Theory-class} were tested with several parameters.
+Tests were conducted by training the SVM on the test-data, and using the validate-data to find the best parameters.
+
+Three different types of hyperplanes were used.
+A polygonal plane was tested with degrees of $2$ till $9$.
+An RBF plane was tested with gammas of $0.0$ till $1.0$ with steps of $0.1$.
+Lastly a linear plane was tested.
+Each of the twenty SVM models were trained on part of the train-set, with intervals of order of magnitude; the sizes of the train-set were: 14, 140, 1400 and 14000 images.
+
+\subsection{Impelemtation}
+\label{sec:Method-implementation}
+\Python has been used to write the code necessary for the pipeline.
+Not only because Caffe has an interface in \Python, but also because of the many libraries available in \Python.
+
+The library that allows the use of matrices and basic linear algebra operations is \texttt{numpy}.
+Another library called \texttt{scikit.learn} has an implementation of an SVM, which has been used in this project.
+The code used in this project can be found in appendix \ref{sec:ap-code}
+
+All models are trained and tested on a laptop with 2$^{nd}$ generation i5 CPU, 4GB RAM and without using a GPU. Therefore time testing and training took in this project should be evaluated relatively to each other.
+
+Furthermore, because no GPU was used, running Caffenet took a considerable amount of time. Therefore the output of the network had been saved for each image, to speed up the training of the SVM.
+
+\subsection{Detecting location of plastic}
+\label{sec:Method-location}
+After testing the pipeline to detect plastic and marine life on images, small adaptations were made to find the location of the classes in the image.
+When the system developed in this project is used for practical applications, location of the plastic is important.
+
+To distinguish blobs in an image, several techniques could be used; however, as a prove of feasibility, no complex algorithms were used in this project.
+A new piece of code was written that segments the image in sections and treats each of them as an image in the original pipeline.
+
+The outcome of each segmented piece of the image are cumulated to show the confidence of detection of the classes at the given location in the image.
+
+Because there is not labelled data of these segmented images, the evaluation could not be done on a large scale.
+Therefore no sizeable experiments could be conducted to test the accuracy of locating of the classes.
+However, in section \ref{sec:Results-sub} the outcome of several tests is shown.
+
+
+
+
+
+
+
+
+
+
+
+\iffalse
+\subsection{Algorithm}
+\label{sec:Method-algotihm}
+\todo{structuur: -ding, -implementatie}
+Because of the high accuracy Convolutional Neural Networks (CNNs) have reached on several problems in Computer Vision, they are also used in this project.
+As stated in section \ref{sec:Method-Data}, this project will not train a CNN, but make use of a pre-trained one.
+This not only because of the high chance of over-fitting on the data, but also because a pre-trained CNN has already learned basic visual concepts.
+The first layers of a CNN consist of abstract representations of lines, corners and other gradients \citep{zeiler2014visualizing}.
+Unnecessarily training a network on these concepts would be a waste of time.
+
+Moreover floating plastic and animals, the classes that are trained in this project, consist of several distinctive features that are probably learnt by the network in higher layers of abstraction.
+The second-to-last layer of the network consist of an abstract representation of the image.
+This layer will probably have the information needed to classify the images. \citeneed
+
+The output of this second-to-last layer will then be used to train several algorithms to research which will perform best.
+The different algorithms are stated in detail below and the results of each algorithm can be found in tion}
+After testing the pipeline to detect plastic and marine life on images, small adaptations were made tosection \ref{sec:Results} \todo{deze alinea uitbreiden}
+\todo{pipeline en evaluatie }
+
+\subsubsection{Convolutional Neural Network}
+\label{sec:Method-CNN}
+\todo{dit een stuk korter/vlotter/to-the-point (motivatie in theory)}
+%How the algorithm from section CNN is used here... caffe framework (and why)...
+In section \ref{sec:Theory-CNN} and \ref{sec:Method-Algorithm} the usage of Convolutional Neural Networks (CNNs) is funded.
+In this section the chosen framework and network will be explained in detail.
+
+Several libraries exist that implement a CNN.
+In this project the choice is made to use Caffe \citep{jia2014caffe}.
+This framework is open source and free to use.
+Moreover it has a large community maintaining and developing, can run both on CPU and GPU and has an interface to \texttt{Python}.
+
+The Caffe framework has several pre-trained CNNs.%, including GoogleNet.
+However, to reduce computation needed, a smaller network called Caffenet.
+This is an implementation of Alexnet \citet{krizhevsky2012imagenet} with small diferences, trained on the \textit{ilsvrc12} dataset. \citeneed
+This network segments the image in five overlapping `sub-images' (four corners and one centre) and their mirrored image, to improve accuracy.
+
+Every image in the dataset has been pulled through the network, after which the data of the last and second-to-last layer has been saved.
+The data of the last layer of the network is returned as a \texttt{numpy}\footnote{\texttt{numpy} is a \texttt{Python} library used for linear algebra} array of size $1\times1000$.
+The numbers in this array represent the probability the given image belongs to the respective class.
+The second-to-last layer, called \textit{fc7} in this network, is a \texttt{numpy} array of size $10\times4096$.
+The $4096$ columns are the abstract representation of the image, where the $10$ rows represent the different `sub-images'.
+The data was stored on a hard-drive to speed-up further calculations.
+
+%\subsubsection{Principal Component Analysis}
+%\label{sec:Method-PCA}
+%\todo{rede verzinnen waarom dit gedaan is}
+
+\subsubsection{Feed Forward Network}
+\label{sec:Method-FFN}
+\todo{dit stuk weg}
+To classify the second-to-last layer in the two classes of this project, a Feed Forward Neural Network (FFN) has been used.
+This network has a structure of three layers: the input layer, the hidden layer and the output layer.
+The implementation of this network has not been made in this project, but a \texttt{Python} implementation of \citeneed is used.
+The input layer of 4096 nodes, one for each output of the CNN, and output layer of two nodes, one for each of the classes, were immutable.
+Different numbers of nodes in the hidden layer were tested, even so the normalisation of the data.
+
+The train-set has been used for training, and the validate-set has been used to distinguish between the different parameters.
+
+The output of this network, shown in section \ref{sec:Results-FFN}, was not satisfactory, therefore the use of SVMs was researched further.
+
+\subsubsection{Support Vector Machine}
+\label{sec:Method-SVM}
+After testing the FFN, the choice was made to use a Support Vector Machine (SVM).
+In this case the implementation of \texttt{scikit.learn} of SVMs is used.
+The second-to-last layer output constructs a 4096 dimensional space were the data represents points.
+To speed up computation the mean of the `sub-images' is used to reduce the number of data-points.
+
+The same method as with FFN regarding fitting the data and parameters on the train- and validate-set was used.
+The results are shown in section \ref{sec:Results-SVM}.
+
+\subsubsection{Detecting location of plastic}
+\label{sec:Method-sub}
+After several tests with a SVM, locating plastic within the image was researched.
+Several techniques could be used to distinguish blobs, however, as a prove of feasibility, no complex algorithms were used.
+A new piece of code was written that segments the image in sections and treats each of them as an image in the original pipeline.
+
+Because there is not labelled data of these segmented images, the evaluation could not be done on a large scale.
+Therefore no sizable experiments could be conducted to test the accuracy of locating of the classes.
+However, in section \ref{sec:Results-sub} the outcome of several test is shown.
+
+\fi

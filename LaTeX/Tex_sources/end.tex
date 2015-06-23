@@ -1,0 +1,41 @@
+\vfill
+\bibliographystyle{abbrvnat}
+\bibliography{Tex_sources/bib}
+
+\clearpage
+
+\ifx\showapp\undefined
+\begin{appendix}
+\renewcommand{\thesubsection}{\thesection.\roman{subsection}}
+\renewcommand{\thesubsubsection}{\thesubsection - \arabic{subsubsection}}
+\addtocontents{toc}{\setcounter{tocdepth}{2}}
+
+\section{\texttt{Python} code of the project}
+\label{sec:ap-code}
+
+\section{Output of \texttt{Python} code}
+\label{sec:ap-out}
+
+\subsection{SVM}
+\begin{tabular}{ p{0.2\textwidth } | p{0.8\textwidth } }
+abbrivation & meaning \\ \hline
+type & which type of model used for the fitting hyperplane; poly mean polynomial, where the last digit stands for the degree; rbf is gaussian, where the last digit stands for gamma \\
+Ttrain & the amount of time in seconds the complete training took \\
+Ttest & the amount of time in seconds the complete testing took \\
+Dsize & the amount of data-points used for training the model \\
+Vsize & the amount of data-points used for testing the model \\
+Bco & the amount of test-points that were correct\footnote{correct means here having the same output as the label, so both \texttt{11} and \texttt{00} are considered correct i.e. an iff} on both classes \\
+Pco & the amount of test-points that were correct only on the plastic class \\
+Aco & the amount of test-points that were correct only on the animal class \\
+Bac & the accuracy on both classes i.e. $\frac{Bco}{Vsize}$ \\
+Pac & the accuracy on the plastic class i.e. $\frac{Bco+Pco}{Vsize}$ \\
+Aac & the accuracy on the animals class i.e. $\frac{Bco+Aco}{Vsize}$
+\end{tabular}
+{\small
+\begin{longtable}{r|r|r|r|r|r|r|r|r|r|r|r}
+\input{Tex_sources/data/svmouttotal.tex}
+\end{longtable}
+}
+
+\end{appendix}
+\fi

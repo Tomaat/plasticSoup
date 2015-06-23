@@ -1,0 +1,35 @@
+\section{Conclusion}
+\label{sec:Conclusion}
+%Intepretatie uit resultaten
+Several conclusions can be made from this project.
+%Firstly, however, no conclusion can be made from the results of the Feed Forward Network.
+%The implementation used in this project did not work, nevertheless usage of a neural network for training the second-to-last layer could work.
+%In the discussion I will elaborate on this.
+
+Firstly, the Support Vector Machine had promising results.
+The tests of figure \ref{fig:c14} show that the linear model has one of the highest accuracies of the different hyperplanes, while also having the smallest time to train and test.
+The RBF model shows less satisfying results.
+It takes a large amount of time to train and test on the model, while not being able to gain a high accuracy.
+The polynomial model trained on the train-set of 14k images shows an interesting trent: the higher the degree of the polynome, the lower the accuracy becomes.
+In other words, for this problem -- detecting two classes from a large amount of feature-vectors -- the usage of a linear SVM works best.
+
+The test of figure \ref{fig:lin1} shows an accuracy on plastic and animal detection of less than 1\permil.
+However, because the model is trained on 70\% the images in the dataset, which consists mostly of consecutive frames of short film clips, there is a substantial amount of overfitting possible.
+
+Therefore, as shown in figure \ref{fig:lin2} another test using the complete dataset from both above and below water viewpoints, shows how the linear SVM performs on different amounts of train data.
+In this case overfitting when half the dataset is used is also probable, nevertheless, the model also shows accuracy of more than 90\% when trained on merely a small part of the train-set.
+Therefore it can be concluded that this method, using the second-to-last layer of a pre-trained Convolutional Neural Network on an SVM, makes it possible to detect Plastic Soup in images.
+
+Concluding from the localisation of plastic within the images is difficult.
+The conducted test shows some results.
+Several of the images show a higher confidance on locations where the consentration of plastic is higher.
+However, this is not always the case; especialy with the location of marine-life.
+More tests should be conducted with this technique, with possibly more annotated data, before a conclusion can be made.
+
+Finally the usability of the promising method of using pre-trained CNNs to train on classes that were not in the original CNN is shown in this project.
+Using a pre-trained CNN as a feature extractor and training another classifier is a simple technique to gain high accuracy while training on a small dataset.
+
+%connections between existing theories and how the algorithm identifies plastic soup. including: what works? and what are the gaps?
+
+%Figure \ref{fig:lin1} shows the improvement of accuracy when a larger train-set is used, while the enlarged train-set also increases the amount of time needed to train.
+%In figures \ref{fig:c14} till \ref{fig:c14000} the increasing time needed for larger train-sets can also be seen between the figures.

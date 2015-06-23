@@ -1,0 +1,26 @@
+\usetheme{Madrid}
+\usecolortheme{seahorse}
+\usefonttheme{structurebold}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{xcolor}
+\usepackage[british]{babel}
+%\usepackage[round]{natbib}
+\usepackage[]{units}
+\usepackage{epstopdf}
+
+\definecolor{blueisch}{RGB}{12,150,200}
+\definecolor{bluedark}{RGB}{12,100,150}
+\definecolor{blackish}{RGB}{2,3,15}
+\newcommand{\emp}[1]{\textcolor{blueisch}{\textbf{#1}}}
+\newcommand{\demp}[1]{\textcolor{bluedark}{\textit{#1}}}
+\newcommand{\point}[2]{\item \emp{#1}\\ #2}
+\newcommand{\punt}[2]{\item #1\\ \demp{#2}}
+\newcommand{\kop}[1]{\textcolor{blackish}{\textbf{\large #1}}}
+\newcommand{\numbul}[1]{\begin{enumerate}[$\bullet$] #1 \end{enumerate}}
+\newcommand{\numbar}[1]{\begin{enumerate}[$-$] #1 \end{enumerate}}
+\newcommand{\slide}[2]{\begin{frame}[t] \frametitle{\kop{#1}} {\Large #2} \end{frame}}
+\newcommand{\plot}[1]{\begin{frame} \begin{center} \includegraphics[keepaspectratio=true,width=\textwidth]{#1} \end{center}\end{frame}}
+\newcommand{\film}[1]{\begin{frame} \begin{center} \flashmovie[width=\textwidth,engine=pure-swf,auto=1,controlbar=1]{#1} \end{center} \end{frame}}
+
+\beamertemplatetransparentcovered

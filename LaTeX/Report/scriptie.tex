@@ -1,0 +1,69 @@
+\documentclass[a4paper, 11pt]{article}
+\input{Tex_sources/meta.tex}
+\newsavebox\mybox
+\savebox\mybox{\tikz[color=red,opacity=0.1]\node{DRAFT};}
+\newwatermark*[allpages,angle=45,scale=10,xpos=-20,ypos=15]{\usebox\mybox}
+\title{Detecting Plastic Soup automatically}
+\author{Student:\\Ysbrand Galama \\ Stud.ID: 10262067 \and Supervisor:\\ Thomas Mensink }
+\date{\today}
+
+%\begin{figure}[h!tb]
+%\centering
+%\includegraphics[keepaspectratio=true,width=.6\textwidth]{../images/}
+%\caption{}
+%\label{fig:}
+%\end{figure}
+
+%\begin{table}[h!tb]
+%\centering
+%\caption{}
+%\label{tab:}
+%\begin{tabular}{ccc}
+%1&1&1
+%\end{tabular}
+%\end{table}
+
+\begin{document}
+%\def\showfig{1} %-- comment to show figures
+%\def\showapp{1} %-- comment to show appendix
+%\def\showintro{1} %-- comment to show titlepage
+%\def\showpbreak{1} %-- comment to flush pages
+
+\ifx\showintro\undefined
+\input{Report/titlepage.tex}
+
+\tableofcontents
+
+\vfill
+\begin{abstract}
+This is the abstract... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris placerat erat vitae semper fringilla. Integer rhoncus sed libero quis hendrerit. Duis et nunc convallis, porttitor urna quis, ultrices nunc. Ut quis ornare neque. Vivamus rutrum nunc arcu, ac pretium nulla lobortis ac. Duis a lectus ex. Fusce eget nulla at metus commodo posuere. Proin et velit sed augue interdum lobortis. Mauris ut nisi suscipit purus dictum rutrum vitae non erat. Nulla non semper turpis, nec eleifend mi. Proin ut bibendum est, quis auctor ante.
+\end{abstract}
+\vfill
+\newpage
+\else
+\noindent {\it NOTE to reader: this section is not yet finished, therefore several comments are written between the sentences which can be ignored.}\\ \mbox{}~\hfill{Ysbrand Galama, \today}
+\fi
+
+\input{Report/sections/intro.tex}
+\ifx\showpbreak\undefined \clearpage \fi
+
+\input{Report/sections/theory.tex}
+\ifx\showpbreak\undefined \clearpage \fi
+
+\input{Report/sections/data.tex}
+\ifx\showpbreak\undefined \clearpage \fi
+
+\input{Report/sections/method.tex}
+\ifx\showpbreak\undefined \clearpage \fi
+
+\input{Report/sections/results.tex}
+\ifx\showpbreak\undefined \clearpage \fi
+
+\input{Report/sections/conclusion.tex}
+\ifx\showpbreak\undefined \clearpage \fi
+
+\input{Report/sections/discussion.tex}
+%\ifx\showpbreak\undefined \clearpage \fi
+
+\input{Tex_sources/end.tex}
+\end{document}

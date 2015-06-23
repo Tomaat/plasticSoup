@@ -2,30 +2,70 @@
 \label{sec:Discussion}
 %intepretatie uit conclusie, beantwoord hypothese,
 \todo{kijken of subsections nodig zijn}
-This project tried to begin the build of autonomous agents that could clean up the ocean of plastic.
-An agent was not build, however a sizable start was made with the vision of such an agent.
-Several state-of-the-art algorithms were used on a dataset of images containing floating plastic, animals, both or none to classify the images in one of the classes.
-One of the algorithms -- the Feed Foreward Network -- trained on the second-to-last layer of a Convolutional Neural Network, did not work satisfactory.
+%====samenvatting
+This project tried to contribute on solving Plastic Soup.
+The amount of floating plastic in the world's oceans could be very dangerous to the environment and society \citet{moore2011plastic}.
+Automating the process could help with the clean-up, therefore a system that can detect plastic was researched in this project.
 
-There are several possible reasons the Feed Forward Network used in this project did not perform well.
-Because the implementation was not part of a \texttt{Python} library, there could be bugs.
-This however does not seem probable, because the implementation was tested with a xor dataset which performed properly.
+A dataset was constructed for this purpose, on which a Convolutional Neural Network was used for feature extraction.
+On these features a SVM classifier was trained and tested against the labels of the dataset.
+As shown in section \ref{sec:Results}, the SVM had a high accuracy, even while trained on small amounts of data.
 
-More likely is the normalisation of the data.
-The second-to-last layer of the CNN was not normalised, while the FNN implementation used ${tanh}()$ to approximate the Sigmoid function.
-However, even a normalisation of the data did not affect the outcome.
-Bottom-line, the network was not able to learn the classes from the data.
+%This project tried to begin the build of autonomous agents that could clean up the ocean of plastic.
+%An agent was not build, however a sizeable start was made with the vision of such an agent.
+%Several state-of-the-art algorithms were used on a dataset of images containing floating plastic, animals, both or none to classify the images in one of the classes.
+%One of the algorithms -- the Feed Forward Network -- trained on the second-to-last layer of a Convolutional Neural Network, did not work satisfactory.
 
+%There are several possible reasons the Feed Forward Network used in this project did not perform well.
+%Because the implementation was not part of a \texttt{Python} library, there could be bugs.
+%This however does not seem probable, because the implementation was tested with a xor dataset which performed properly.
+
+%More likely is the normalisation of the data.
+%The second-to-last layer of the CNN was not normalised, while the FNN implementation used ${tanh}()$ to approximate the Sigmoid function.
+%However, even a normalisation of the data did not affect the outcome.
+%Bottom-line, the network was not able to learn the classes from the data.
+
+%===interpretatie conclusie
 The accurate results of the Support Vector Machine could be expected.
 SVMs are known to work well in high dimensional data, as long as the amount of classes to be trained on is small.
-The 4096 vector of the second-to-last layer of the CNN only needed to be trained on two classes, for which both had an SVM trained on ether showing or not.
+The 4096 vector of the second-to-last layer of the CNN needed to be trained on two classes, for which both had an SVM trained on ether showing or not.
 
-\todo{stukje over evaluatie onderzoek}
+As also stated before, the high accuracy on the test set could be caused by the similarity of the frames.
+Nevertheless, as high accuracy also occurs with small amounts of train-data, it is possible to conclude the system truly detects plastic in images.
 
+The localisation however has less satisfying results.
+The confidence of detecting plastic or animals does not conform consequently with what is shown on the image.
+This is possibly explained by the fact that the system learned to detect plastic from a distance.
+In experiments of image classification many pixels described the existence of plastic, while in these localisation experiments, a smaller amount of pixels could be used for classification.
+Besides that, it is needed in the localisation to view the plastic more close-up.
+Instead of detecting much plastic together, single plastic objects now need to be recognized.
+
+%===evaluatie
+%-weinig interessante dataset
+%-CNN evalueren
+%\todo{stukje over evaluatie onderzoek}
+In this project, several aspects could have been improved for improvement of the results.
+Firstly the used dataset consisted of many similar frames, which increased the chance of overfitting to this particular dataset.
+Besides that, the classes that were trained on were not fairly distributed in the dataset.
+An improved dataset could be used to improve the results of this project.
+An improved dataset should also contain labels on parts of the images, which could improve the training and testing of the localisation of plastic within the image.
+
+This project did not research the usage of different Convolutional Neural Networks.
+A standard CNN was used to construct the feature-vector; no time was spent on researching if other networks would perform better.
+
+Not only was assumed that the CNN worked properly that it was not further tested, also the parameters with which the SVM was tested were not statistical analysed; no cross-fold validation was conducted.
+
+
+
+%===vervolgonderzoek
+%-localisatie verbeteren mbv BING oid
 \todo{stukje over vervolgonderzoek, oa verbeteren plastic-herkenning (ook locatie) en maken van autonomous agent voor schepen}
 
+Obviously, further research in this domain could correct the mistakes made in this project.
+A better dataset and more cross-validation could improve the localisation of detecting plastic.
 
 
+%===afsluiting
 This project is one of the many recent projects that show the possibilities with Convolutional Neural Networks.
 Besides that, it also shows how the Artificial Intelligence can be used to help solving environmental problems.
 I do not think the hippie movement in the 60s could imagine that AI could solve their problems for them today.

@@ -122,7 +122,7 @@ def run(image,depth,multi=True):
 			iplastic[b0:b1,b2:b3,:] += [0,-p/norm,-p/norm]
 			ianimals[b0:b1,b2:b3,:] += [-a/norm,0,-a/norm]
 
-	#show(image,iplastic,ianimals)
+	show(image,iplastic,ianimals)
 	return iplastic,ianimals
 		
 def show(image,ia,ip):
@@ -136,7 +136,7 @@ def show(image,ia,ip):
 
 def run_and_save(imagefolder,imagename,depth):
 	image = caffe.io.load_image(imagefolder+imagename)
-	ip,ia = run(image,depth)
+	ip,ia = run(image,depth,False)
 	ts = datetime.datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d_%H:%M:%S__')
 	log('saving...')
 	plt.imshow(ip)

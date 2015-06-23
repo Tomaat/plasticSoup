@@ -136,7 +136,7 @@ def show(image,ia,ip):
 
 def run_and_save(imagefolder,imagename,depth):
 	image = caffe.io.load_image(imagefolder+imagename)
-	ip,ia = run(image,depth)
+	ip,ia = run(image,depth,False)
 	ts = datetime.datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d_%H:%M:%S__')
 	log('saving...')
 	plt.imshow(ip)
@@ -144,7 +144,7 @@ def run_and_save(imagefolder,imagename,depth):
 	plt.imshow(ia)
 	plt.savefig('segout/'+ts+imagename+'__animals__.png')
 	plt.imshow(image)
-	plt.savefig('segout/'+ts+imagename+'__original__.png')
+	plt.savefig('segout/'+ts+imagename+'__image__.png')
 	#show(image,ia,ip)
 
 def read_and_run(filename,depth):

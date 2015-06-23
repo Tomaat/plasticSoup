@@ -2,7 +2,7 @@
 \label{sec:Introduction}
 %wat, waar, waarom
 %maatschappelijke bijdrage van het project
-The environment is constantly being influenced by humanity and this influence has been debated since the hippie movement in the 60s.
+The environment is constantly being influenced by humanity and this influence has been debated since the hippie movement in the '60s.
 The debate on the weight humanity has on the environment has also been fuelled in recent years; the full impact of oil-spills and climate change are still being debated about. \citepos
 
 This project will focus on one of the environmental hazards: Plastic Soup.
@@ -72,7 +72,7 @@ Therefore, this project will focus on techniques that are able to distinguish pl
 \label{sec:Intro-Me}
 %Onderzoeksvraag, proefopzet, hypothese
 To develop a system that can detect plastic, state-of-the-art imaging techniques will be used.
-In recent years the accuracy of imaging techniques on object recognition have been growing, as section \ref{sec:Theory-CV} describes.
+In recent years the accuracy of imaging techniques on object recognition have been growing, as section \ref{sec:Theory} describes.
 This project will research how these techniques will perform on Plastic Soup detection.
 
 A dataset of annotated images has been constructed to be used in this project.
@@ -82,13 +82,16 @@ The CNN will not be trained on the data itself, however a pre-trained network wi
 These feature-vectors will be used to train a classifier to classify the images in ether containing or not containing plastic.
 The classifier used in this project is a Support Vector Machine (SVM); to distinguish between plastic and marine-life, two SMVs will be trained.
 
-This method for image recognition should give an appropriate baseline.
-\todo{uitbreiden}
+Both CNNs and SVMs are known to reach high accuracy in Computer Vision, therefore it is hypothesised that this method for plastic recognition should give an appropriate baseline.
+
+Besides the detection of images containing plastic, this project will also research if the location of the plastic within an image can be detected.
+As a prove of concept, the pipeline of the plastic recognition will be adapted a small amount to give results for localisation.
+To truly localise the plastic in the image, more research will be necessary.
 
 \subsection{Outline of the thesis chapters}
 \label{sec:Intro-Outline}
 The performance of the plastic-soup detector made in this project are described in section \ref{sec:Conclusion} from the results in section \ref{sec:Results}.
-In section \ref{sec:Method} the method of the project is shown, and in section \ref{sec:Discussion} I will go into the parts that can be improved in further research.
+In section \ref{sec:Method} the method of the project is shown, section \ref{sec:Data} shows how the data used in this project was acquired, and in section \ref{sec:Discussion} I will go into the parts that can be improved in further research.
 But first, in section \ref{sec:Theory} the current state-of-the-art techniques in the field of Computer Vision.
 %In section \ref{sec:Theory}... \todo{when the thesis is finished, fill this paragraph}
 

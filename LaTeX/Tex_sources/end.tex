@@ -4,7 +4,6 @@
 
 \clearpage
 
-\ifx\showapp\undefined
 \begin{appendix}
 \renewcommand{\thesubsection}{\thesection.\roman{subsection}}
 \renewcommand{\thesubsubsection}{\thesubsection - \arabic{subsubsection}}
@@ -17,6 +16,7 @@
 \label{sec:ap-out}
 
 \subsection{SVM}
+\ifx\showapp\undefined
 \begin{tabular}{ p{0.2\textwidth } | p{0.8\textwidth } }
 abbrivation & meaning \\ \hline
 type & which type of model used for the fitting hyperplane; poly mean polynomial, where the last digit stands for the degree; rbf is gaussian, where the last digit stands for gamma \\
@@ -36,6 +36,5 @@ Aac & the accuracy on the animals class i.e. $\frac{Bco+Aco}{Vsize}$
 \input{Tex_sources/data/svmouttotal.tex}
 \end{longtable}
 }
-
-\end{appendix}
 \fi
+\end{appendix}

@@ -1,4 +1,4 @@
-\begin{thebibliography}{7}
+\begin{thebibliography}{8}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -10,6 +10,13 @@ D.~Barnes and P.~Milner.
 \newblock Drifting plastic and its consequences for sessile organism dispersal
   in the atlantic ocean.
 \newblock \emph{Marine Biology}, 146\penalty0 (4):\penalty0 815--825, 2005.
+
+\bibitem[Fukushima(1980)]{fukushima1980neocognition}
+K.~Fukushima.
+\newblock Neocognitron: A self-organizing neural network model for a mechanism
+  of pattern recognition unaffected by shift in position.
+\newblock \emph{Biological cybernetics}, 36\penalty0 (4):\penalty0 193--202,
+  1980.
 
 \bibitem[Girshick et~al.(2014)Girshick, Donahue, Darrell, and
   Malik]{girshick2014rich}

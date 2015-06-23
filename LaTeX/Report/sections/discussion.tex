@@ -1,7 +1,7 @@
 \section{Discussion}
 \label{sec:Discussion}
 %intepretatie uit conclusie, beantwoord hypothese,
-\todo{kijken of subsections nodig zijn}
+%\todo{kijken of subsections nodig zijn}
 %====samenvatting
 This project tried to contribute on solving Plastic Soup.
 The amount of floating plastic in the world's oceans could be very dangerous to the environment and society \citet{moore2011plastic}.
@@ -55,20 +55,26 @@ A standard CNN was used to construct the feature-vector; no time was spent on re
 
 Not only was assumed that the CNN worked properly that it was not further tested, also the parameters with which the SVM was tested were not statistical analysed; no cross-fold validation was conducted.
 
-
-
 %===vervolgonderzoek
 %-localisatie verbeteren mbv BING oid
-\todo{stukje over vervolgonderzoek, oa verbeteren plastic-herkenning (ook locatie) en maken van autonomous agent voor schepen}
+%\todo{stukje over vervolgonderzoek, oa verbeteren plastic-herkenning (ook locatie) en maken van autonomous agent voor schepen}
 
 Obviously, further research in this domain could correct the mistakes made in this project.
 A better dataset and more cross-validation could improve the localisation of detecting plastic.
+Even so, training the system to recognise plastic on several scales could increase the performance on localisation.
 
+Other manners to improve the localisation of the plastic within the images, are the use of other algorithms.
+If more complex algorithms are used for object detection in the image, the blobs resulting from those could be input for the pipeline, instead of the now used segmentation-pyramid.
+One of the algorithms that could be used for this is BING \citeneed; this project did not have the time to implement one of these algorithms.
+
+Before the system proposed in this project could be used for real-world applications, more research is needed.
+However, this project showed the possibility of using state-of-the-art Computer Vision techniques to detect Plastic Soup.
+More research building on the results of this project could result in applications that can detect Plastic Soup.
 
 %===afsluiting
-This project is one of the many recent projects that show the possibilities with Convolutional Neural Networks.
+This project is one of the many recent projects that show the possibilities of Convolutional Neural Networks.
 Besides that, it also shows how the Artificial Intelligence can be used to help solving environmental problems.
-I do not think the hippie movement in the 60s could imagine that AI could solve their problems for them today.
+I do not think the hippie movement in the '60s could imagine that AI could solve their problems for them today.
 
 %\subsection{Future research}
 %Evatuatie onderzoek, vervolgonderzoek

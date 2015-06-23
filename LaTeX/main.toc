@@ -6,17 +6,17 @@
 \contentsline {section}{\numberline {2}Theoretical framework}{5}{section.2}
 \contentsline {subsection}{\numberline {2.1}Image representations}{5}{subsection.2.1}
 \contentsline {subsection}{\numberline {2.2}Image classification}{6}{subsection.2.2}
-\contentsline {section}{\numberline {3}Dataset of Plastic Soup images}{9}{section.3}
-\contentsline {section}{\numberline {4}Method}{11}{section.4}
-\contentsline {subsection}{\numberline {4.1}Pipeline}{11}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Impelemtation}{11}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Detecting location of plastic}{12}{subsection.4.3}
-\contentsline {section}{\numberline {5}Results}{13}{section.5}
-\contentsline {subsection}{\numberline {5.1}Pipeline}{13}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}Detecting location of plastic}{13}{subsection.5.2}
+\contentsline {section}{\numberline {3}Dataset of Plastic Soup images}{8}{section.3}
+\contentsline {section}{\numberline {4}Method}{10}{section.4}
+\contentsline {subsection}{\numberline {4.1}Pipeline}{10}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Impelemtation}{10}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Detecting location of plastic}{11}{subsection.4.3}
+\contentsline {section}{\numberline {5}Results}{12}{section.5}
+\contentsline {subsection}{\numberline {5.1}Pipeline}{12}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Detecting location of plastic}{12}{subsection.5.2}
 \contentsline {section}{\numberline {6}Conclusion}{17}{section.6}
 \contentsline {section}{\numberline {7}Discussion}{18}{section.7}
 \global \c@tocdepth 2\relax 
-\contentsline {section}{\numberline {A}\texttt {Python} code of the project}{20}{appendix.A}
-\contentsline {section}{\numberline {B}Output of \texttt {Python} code}{20}{appendix.B}
-\contentsline {subsection}{\numberline {B.i}SVM}{20}{subsection.B.1}
+\contentsline {section}{\numberline {A}\texttt {Python} code of the project}{21}{appendix.A}
+\contentsline {section}{\numberline {B}Output of \texttt {Python} code}{21}{appendix.B}
+\contentsline {subsection}{\numberline {B.i}SVM}{21}{subsection.B.1}

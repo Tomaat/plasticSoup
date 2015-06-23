@@ -1,0 +1,38 @@
+svm op
+ a) wel/geen dieren
+ b) wel/geen plastic
+
+
+-AP, plastic
+  ground truth voor worstcase AP, en voor een aantal randoms
+-classificatie
+
+vito ferrari - Edinburgh
+
+    5 - 0.00058
+   10 - 0.0016  * 2.7
+   50 - 0.015   * 9.37
+  100 - 0.066   * 4.4
+  500 - 1.7     * 26
+ 1000 - 6.6     * 3.9
+ 5000 - 172     * 44
+10000 - 
+14428 - 
+
+
+-trainen op beide sets (in ordes van groote), evaluatie op beiden
+-ook nog leuk: trainen op A testen op B en vica versa (alleen volledig)
+
+kwantitative evaluatie
+
+patching (op verschillende grootes)
+blob-herkenning: Bing object proposals / selective search
+
+kwalitatieve evaluatie
+
+
+
+heat map voor detectie met scale van 'correctness'
+BING object proposal
+
+

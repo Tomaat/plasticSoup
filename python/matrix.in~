@@ -1,0 +1,16 @@
+# use the following syntax:
+# each line consist of: 
+# foldername|||filename
+# example:
+#../DATA_BWATER/|||1_01.jpg
+
+../DATA_AWATER/|||253_01.jpg
+../DATA_BWATER/|||20607_01.jpg
+../DATA_AWATER/|||299_00.jpg
+../DATA_BWATER/|||2737_10.jpg
+../DATA_AWATER/|||31_11.jpg
+../DATA_BWATER/|||4409_01.jpg
+../DATA_AWATER/|||401_10.jpg
+../DATA_BWATER/|||5053_10.jpg
+../DATA_AWATER/|||701_11.jpg
+../DATA_BWATER/|||6_01.jpg

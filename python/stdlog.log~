@@ -1,0 +1,328 @@
+2015-05-21 12:28:36 -- test adata program
+2015-05-21 14:52:53 -- training linear model
+2015-05-21 14:55:08 -- training linear model
+2015-05-21 14:55:12 -- fitting plastic
+2015-05-21 14:55:44 -- in 31.799134 sec
+2015-05-21 14:55:44 -- fitting animals
+2015-05-21 14:56:27 -- in 43.119874 sec
+2015-05-21 14:57:30 -- training linear model
+2015-05-21 14:57:31 -- fitting plastic
+2015-05-21 14:58:02 -- in 31.263674 sec
+2015-05-21 14:58:02 -- fitting animals
+2015-05-21 14:58:44 -- in 42.041288 sec
+2015-05-21 14:58:44 -- model trained and saved in 73.49 sec
+2015-05-21 15:04:44 -- test in 16.991217 sec
+2015-05-21 15:04:44 -- of 4123 items:  4119 correct,    2 plastic only correct,    2 animals only correct,    0 both wrong
+2015-05-21 15:07:17 -- test in 16.816104 sec
+2015-05-21 15:07:17 -- of 4123 items:  4119 correct,    2 plastic only correct,    2 animals only correct,    0 both wrong
+2015-05-21 15:08:01 -- test in 16.869513 sec
+2015-05-21 15:08:01 -- of 4123 items:  4119 correct,    2 plastic only correct,    2 animals only correct,    0 both wrong
+2015-05-21 15:09:31 -- test in 16.844381 sec
+2015-05-21 15:09:31 -- of 4123 items:  4119 correct,    2 plastic only correct,    2 animals only correct,    0 both wrong
+2015-05-21 15:19:14 -- test in 17.070976 sec
+2015-05-21 15:19:14 -- of 4123 items:  4119 correct,    2 plastic only correct,    2 animals only correct,    0 both wrong
+2015-05-21 17:14:18 -- running data through net
+2015-05-21 21:44:01 -- net run and saved in 16182.27 sec
+2015-05-21 21:44:01 -- using ADATA
+2015-05-21 21:44:01 -- reload test
+2015-05-21 21:44:01 -- devided in 827, 1654, 2481
+2015-05-21 21:44:03 -- quarter done
+2015-05-21 21:44:10 -- halfway
+2015-05-21 21:44:29 -- 3/4, almost there
+2015-05-21 21:44:53 -- save as array
+2015-05-21 21:44:53 -- reload val
+2015-05-21 21:44:53 -- devided in 413, 826, 1239
+2015-05-21 21:44:56 -- quarter done
+2015-05-21 21:44:58 -- halfway
+2015-05-21 21:45:01 -- 3/4, almost there
+2015-05-21 21:45:04 -- save as array
+2015-05-21 21:45:04 -- reload train
+2015-05-21 21:45:05 -- devided in 2896, 5792, 8688
+2015-05-21 21:45:54 -- quarter done
+2015-05-21 21:48:59 -- halfway
+2015-05-21 21:54:13 -- 3/4, almost there
+2015-05-21 22:01:33 -- save as array
+2015-05-22 10:38:11 -- test in 49.727695 sec
+2015-05-22 10:38:11 -- of 11587 items:  6083 correct,  4198 plastic only correct,  918 animals only correct,  388 both wrong
+2015-06-05 14:57:13 -- open data
+2015-06-05 14:58:19 -- open data
+2015-06-05 14:58:23 -- loop slices
+2015-06-05 14:59:00 -- open data
+2015-06-05 14:59:02 -- loop slices
+2015-06-05 14:59:02 -- fitting plastic
+2015-06-05 14:59:49 -- open data
+2015-06-05 14:59:50 -- loop slices
+2015-06-05 14:59:50 -- fitting plastic
+2015-06-05 14:59:50 -- in 0.018810 sec
+2015-06-05 14:59:50 -- fitting animals
+2015-06-05 14:59:50 -- in 0.002380 sec
+2015-06-05 15:00:02 -- open data
+2015-06-05 15:00:03 -- loop slices
+2015-06-05 15:00:03 -- fitting plastic
+2015-06-05 15:00:03 -- in 0.002087 sec
+2015-06-05 15:00:03 -- fitting animals
+2015-06-05 15:00:03 -- in 0.002261 sec
+2015-06-05 15:02:40 -- fitting plastic
+2015-06-05 15:02:40 -- in 0.002036 sec
+2015-06-05 15:02:40 -- fitting animals
+2015-06-05 15:02:40 -- in 0.002255 sec
+2015-06-05 15:04:44 -- fitting plastic
+2015-06-05 15:04:44 -- in 0.002236 sec
+2015-06-05 15:04:44 -- fitting animals
+2015-06-05 15:04:44 -- in 0.002345 sec
+2015-06-05 15:05:00 -- test in 5.425450 sec
+2015-06-05 15:05:00 -- of 18583 items:  10853 correct,  3951 plastic only correct,  2316 animals only correct,  1463 both wrong
+2015-06-05 15:05:35 -- open data
+2015-06-05 15:05:36 -- loop slices
+2015-06-05 15:05:36 -- fitting plastic
+2015-06-05 15:05:36 -- in 0.002054 sec
+2015-06-05 15:05:36 -- fitting animals
+2015-06-05 15:05:36 -- in 0.002216 sec
+2015-06-05 15:05:41 -- test in 5.349557 sec
+2015-06-05 15:05:41 -- of 18583 items:  10853 correct,  3951 plastic only correct,  2316 animals only correct,  1463 both wrong
+2015-06-05 15:05:41 -- fitting plastic
+2015-06-05 15:05:41 -- in 0.080051 sec
+2015-06-05 15:05:41 -- fitting animals
+2015-06-05 15:05:42 -- in 0.182582 sec
+2015-06-05 15:06:07 -- test in 24.997538 sec
+2015-06-05 15:06:07 -- of 18583 items:  16713 correct,  827 plastic only correct,  686 animals only correct,  357 both wrong
+2015-06-05 15:06:07 -- fitting plastic
+2015-06-05 15:06:09 -- in 2.806201 sec
+2015-06-05 15:06:09 -- fitting animals
+2015-06-05 15:06:13 -- in 4.038948 sec
+2015-06-05 15:08:41 -- =====START=====
+2015-06-05 15:08:41 -- open data
+2015-06-05 15:08:42 -- loop slices
+2015-06-05 15:08:42 -- fitting plastic
+2015-06-05 15:08:42 -- in 0.002021 sec
+2015-06-05 15:08:42 -- fitting animals
+2015-06-05 15:08:42 -- in 0.002263 sec
+2015-06-05 15:08:47 -- test in 5.355241 sec
+2015-06-05 15:08:47 -- of 18583 items:  10853 correct,  3951 plastic only correct,  2316 animals only correct,  1463 both wrong
+2015-06-05 15:08:47 -- fitting plastic
+2015-06-05 15:08:47 -- in 0.082382 sec
+2015-06-05 15:08:47 -- fitting animals
+2015-06-05 15:08:48 -- in 0.182559 sec
+2015-06-05 15:09:13 -- test in 25.452295 sec
+2015-06-05 15:09:13 -- of 18583 items:  16713 correct,  827 plastic only correct,  686 animals only correct,  357 both wrong
+2015-06-05 15:09:13 -- fitting plastic
+2015-06-05 15:09:16 -- in 2.878477 sec
+2015-06-05 15:09:16 -- fitting animals
+2015-06-05 15:09:20 -- in 4.103963 sec
+2015-06-05 15:10:30 -- test in 69.743808 sec
+2015-06-05 15:10:30 -- of 18583 items:  18325 correct,  139 plastic only correct,  112 animals only correct,    7 both wrong
+2015-06-05 15:10:30 -- fitting plastic
+2015-06-05 15:11:18 -- in 47.814274 sec
+2015-06-05 15:11:18 -- fitting animals
+2015-06-05 15:27:51 -- =====START=====
+2015-06-05 15:27:51 -- open data
+2015-06-05 15:27:58 -- loop slices
+2015-06-05 15:29:08 -- =====START=====
+2015-06-05 15:29:08 -- open data
+2015-06-05 15:29:12 -- loop slices
+2015-06-05 15:29:12 -- fitting plastic
+2015-06-05 15:29:12 -- fitting plastic
+2015-06-05 15:29:12 -- in 0.046924 sec
+2015-06-05 15:29:12 -- fitting animals
+2015-06-05 15:29:12 -- in 0.004443 sec
+2015-06-05 15:29:12 -- in 0.129782 sec
+2015-06-05 15:29:12 -- fitting animals
+2015-06-05 15:29:13 -- in 0.278870 sec
+2015-06-05 15:29:21 -- test in 9.290051 sec
+2015-06-05 15:29:21 -- of 18583 items:  10853 correct,  3951 plastic only correct,  2316 animals only correct,  1463 both wrong
+2015-06-05 15:29:21 -- fitting plastic
+2015-06-05 15:29:26 -- in 4.480412 sec
+2015-06-05 15:29:26 -- fitting animals
+2015-06-05 15:29:32 -- in 6.342283 sec
+2015-06-05 15:29:54 -- test in 40.996764 sec
+2015-06-05 15:29:54 -- of 18583 items:  16713 correct,  827 plastic only correct,  686 animals only correct,  357 both wrong
+2015-06-05 15:29:54 -- fitting plastic
+2015-06-05 15:31:11 -- in 77.467038 sec
+2015-06-05 15:31:11 -- fitting animals
+2015-06-05 15:31:24 -- test in 111.636382 sec
+2015-06-05 15:31:24 -- of 18583 items:  18325 correct,  139 plastic only correct,  112 animals only correct,    7 both wrong
+2015-06-05 15:31:24 -- fitting plastic
+2015-06-05 15:31:24 -- in 0.000529 sec
+2015-06-05 15:31:24 -- fitting animals
+2015-06-05 15:31:24 -- in 0.001602 sec
+2015-06-05 15:31:30 -- test in 5.724874 sec
+2015-06-05 15:31:30 -- of 18583 items:  11538 correct,  2972 plastic only correct,  846 animals only correct,  3227 both wrong
+2015-06-05 15:31:30 -- fitting plastic
+2015-06-05 15:31:30 -- in 0.050494 sec
+2015-06-05 15:31:30 -- fitting animals
+2015-06-05 15:31:30 -- in 0.088557 sec
+2015-06-05 15:32:04 -- test in 34.422634 sec
+2015-06-05 15:32:04 -- of 18583 items:  15465 correct,  1336 plastic only correct,  1308 animals only correct,  474 both wrong
+2015-06-05 15:32:04 -- fitting plastic
+2015-06-05 15:32:06 -- in 1.722267 sec
+2015-06-05 15:32:06 -- fitting animals
+2015-06-05 15:32:09 -- in 2.775684 sec
+2015-06-05 15:33:06 -- in 115.266862 sec
+2015-06-05 15:33:42 -- test in 93.385563 sec
+2015-06-05 15:33:42 -- of 18583 items:  18134 correct,  243 plastic only correct,  196 animals only correct,   10 both wrong
+2015-06-05 15:33:42 -- fitting plastic
+2015-06-05 15:34:16 -- in 33.927020 sec
+2015-06-05 15:34:16 -- fitting animals
+2015-06-05 15:35:08 -- in 51.750560 sec
+2015-06-05 15:35:50 -- test in 163.726847 sec
+2015-06-05 15:35:50 -- of 18583 items:  18568 correct,    7 plastic only correct,    7 animals only correct,    1 both wrong
+2015-06-05 15:36:57 -- test in 109.159906 sec
+2015-06-05 15:36:57 -- of 18583 items:  18544 correct,   24 plastic only correct,   14 animals only correct,    1 both wrong
+2015-06-05 15:36:57 -- write output
+2015-06-05 15:39:58 -- =====START=====
+2015-06-05 15:39:58 -- open data
+2015-06-05 15:40:13 -- loop slices
+2015-06-05 15:40:13 -- fitting plastic
+2015-06-05 15:40:13 -- fitting plastic
+2015-06-05 15:40:13 -- in 0.003304 sec
+2015-06-05 15:40:13 -- fitting animals
+2015-06-05 15:40:13 -- in 0.002800 sec
+2015-06-05 15:40:14 -- in 0.096241 sec
+2015-06-05 15:40:14 -- fitting animals
+2015-06-05 15:40:14 -- in 0.212912 sec
+2015-06-05 15:40:21 -- test in 7.073855 sec
+2015-06-05 15:40:21 -- of 18583 items:  10853 correct,  3951 plastic only correct,  2316 animals only correct,  1463 both wrong
+2015-06-05 15:40:21 -- fitting plastic
+2015-06-05 15:40:24 -- in 3.777599 sec
+2015-06-05 15:40:24 -- fitting animals
+2015-06-05 15:40:30 -- in 5.462464 sec
+2015-06-05 15:40:48 -- test in 34.514760 sec
+2015-06-05 15:40:48 -- of 18583 items:  16713 correct,  827 plastic only correct,  686 animals only correct,  357 both wrong
+2015-06-05 15:40:48 -- fitting plastic
+2015-06-05 15:41:56 -- in 67.504585 sec
+2015-06-05 15:41:56 -- fitting animals
+2015-06-05 15:42:08 -- test in 98.322505 sec
+2015-06-05 15:42:08 -- of 18583 items:  18325 correct,  139 plastic only correct,  112 animals only correct,    7 both wrong
+2015-06-05 15:42:08 -- fitting plastic
+2015-06-05 15:42:08 -- in 0.000509 sec
+2015-06-05 15:42:08 -- fitting animals
+2015-06-05 15:42:08 -- in 0.001548 sec
+2015-06-05 15:42:14 -- test in 5.782784 sec
+2015-06-05 15:42:14 -- of 18583 items:  11538 correct,  2972 plastic only correct,  846 animals only correct,  3227 both wrong
+2015-06-05 15:42:14 -- fitting plastic
+2015-06-05 15:42:14 -- in 0.049722 sec
+2015-06-05 15:42:14 -- fitting animals
+2015-06-05 15:42:14 -- in 0.087820 sec
+2015-06-05 15:42:49 -- test in 34.773106 sec
+2015-06-05 15:42:49 -- of 18583 items:  15465 correct,  1336 plastic only correct,  1308 animals only correct,  474 both wrong
+2015-06-05 15:42:49 -- fitting plastic
+2015-06-05 15:42:50 -- in 1.696745 sec
+2015-06-05 15:42:50 -- fitting animals
+2015-06-05 15:42:53 -- in 2.720809 sec
+2015-06-05 15:43:44 -- in 108.199640 sec
+2015-06-05 15:44:16 -- test in 82.410258 sec
+2015-06-05 15:44:16 -- of 18583 items:  18134 correct,  243 plastic only correct,  196 animals only correct,   10 both wrong
+2015-06-05 15:44:16 -- fitting plastic
+2015-06-05 15:44:46 -- in 30.379544 sec
+2015-06-05 15:44:46 -- fitting animals
+2015-06-05 15:45:32 -- in 45.695462 sec
+2015-06-05 15:46:06 -- test in 142.497294 sec
+2015-06-05 15:46:06 -- of 18583 items:  18568 correct,    7 plastic only correct,    7 animals only correct,    1 both wrong
+2015-06-05 15:47:18 -- test in 106.706219 sec
+2015-06-05 15:47:18 -- of 18583 items:  18544 correct,   24 plastic only correct,   14 animals only correct,    1 both wrong
+2015-06-05 15:48:13 -- =====START=====
+2015-06-05 15:48:13 -- open data
+2015-06-05 15:48:30 -- loop slices
+2015-06-05 15:48:30 -- fitting plastic
+2015-06-05 15:48:30 -- fitting plastic
+2015-06-05 15:48:30 -- fitting plastic
+2015-06-05 15:48:30 -- fitting plastic
+2015-06-05 15:48:30 -- fitting plastic
+2015-06-05 15:48:30 -- in 0.001324 sec
+2015-06-05 15:48:30 -- fitting animals
+2015-06-05 15:48:30 -- in 0.002412 sec
+2015-06-05 15:48:30 -- fitting plastic
+2015-06-05 15:48:30 -- fitting plastic
+2015-06-05 15:48:30 -- fitting plastic
+2015-06-05 15:48:30 -- in 0.021317 sec
+2015-06-05 15:48:30 -- fitting animals
+2015-06-05 15:48:30 -- in 0.009723 sec
+2015-06-05 15:48:30 -- in 0.226284 sec
+2015-06-05 15:48:30 -- fitting animals
+2015-06-05 15:48:30 -- in 0.471436 sec
+2015-06-05 15:48:30 -- fitting animals
+2015-06-05 15:48:31 -- in 0.388484 sec
+2015-06-05 15:48:31 -- in 0.981046 sec
+2015-06-05 15:48:35 -- in 5.164470 sec
+2015-06-05 15:48:35 -- fitting animals
+2015-06-05 15:48:43 -- in 7.381040 sec
+2015-06-05 15:48:43 -- in 13.412432 sec
+2015-06-05 15:48:43 -- fitting animals
+2015-06-05 15:48:46 -- test in 16.444446 sec
+2015-06-05 15:48:46 -- of 18583 items:  11538 correct,  2972 plastic only correct,  846 animals only correct,  3227 both wrong
+2015-06-05 15:49:01 -- in 17.765518 sec
+2015-06-05 15:49:06 -- test in 35.629994 sec
+2015-06-05 15:49:06 -- of 18583 items:  10853 correct,  3951 plastic only correct,  2316 animals only correct,  1463 both wrong
+2015-06-05 15:49:48 -- test in 77.641856 sec
+2015-06-05 15:49:48 -- of 18583 items:  15465 correct,  1336 plastic only correct,  1308 animals only correct,  474 both wrong
+2015-06-05 15:49:53 -- in 82.915594 sec
+2015-06-05 15:49:53 -- fitting animals
+2015-06-05 15:50:07 -- test in 95.939160 sec
+2015-06-05 15:50:07 -- of 18583 items:  16713 correct,  827 plastic only correct,  686 animals only correct,  357 both wrong
+2015-06-05 15:51:05 -- in 155.249285 sec
+2015-06-05 15:51:05 -- fitting animals
+2015-06-05 15:51:22 -- in 88.874602 sec
+2015-06-05 15:51:34 -- test in 171.560577 sec
+2015-06-05 15:51:34 -- of 18583 items:  18134 correct,  243 plastic only correct,  196 animals only correct,   10 both wrong
+2015-06-05 15:52:08 -- test in 187.170468 sec
+2015-06-05 15:52:08 -- of 18583 items:  18325 correct,  139 plastic only correct,  112 animals only correct,    7 both wrong
+2015-06-05 15:53:13 -- in 127.897171 sec
+2015-06-05 15:53:45 -- test in 143.289042 sec
+2015-06-05 15:53:45 -- of 18583 items:  18544 correct,   24 plastic only correct,   14 animals only correct,    1 both wrong
+2015-06-05 15:55:02 -- test in 109.070619 sec
+2015-06-05 15:55:02 -- of 18583 items:  18568 correct,    7 plastic only correct,    7 animals only correct,    1 both wrong
+2015-06-05 15:55:02 -- [None, None, None, None, None, None, None, None]
+2015-06-05 15:55:02 -- write output
+2015-06-05 15:59:00 -- =====START=====
+2015-06-05 15:59:00 -- open data
+2015-06-05 15:59:23 -- loop slices
+2015-06-05 15:59:23 -- fitting plastic
+2015-06-05 15:59:23 -- fitting plastic
+2015-06-05 15:59:23 -- fitting plastic
+2015-06-05 15:59:23 -- fitting plastic
+2015-06-05 15:59:23 -- fitting plastic
+2015-06-05 15:59:23 -- in 0.003297 sec
+2015-06-05 15:59:23 -- fitting plastic
+2015-06-05 15:59:23 -- fitting animals
+2015-06-05 15:59:23 -- fitting plastic
+2015-06-05 15:59:23 -- fitting plastic
+2015-06-05 15:59:23 -- in 0.001240 sec
+2015-06-05 15:59:23 -- in 0.004224 sec
+2015-06-05 15:59:23 -- fitting animals
+2015-06-05 15:59:23 -- in 0.001848 sec
+2015-06-05 15:59:23 -- in 0.096244 sec
+2015-06-05 15:59:23 -- fitting animals
+2015-06-05 15:59:23 -- in 0.160015 sec
+2015-06-05 15:59:24 -- in 0.453039 sec
+2015-06-05 15:59:24 -- fitting animals
+2015-06-05 15:59:30 -- in 6.309036 sec
+2015-06-05 15:59:30 -- in 5.805074 sec
+2015-06-05 15:59:30 -- fitting animals
+2015-06-05 15:59:35 -- in 11.583653 sec
+2015-06-05 15:59:35 -- fitting animals
+2015-06-05 15:59:38 -- in 7.872598 sec
+2015-06-05 15:59:40 -- test in 17.343017 sec
+2015-06-05 15:59:40 -- of 18583 items:  11538 correct,  2972 plastic only correct,  846 animals only correct,  3227 both wrong
+2015-06-05 15:59:53 -- in 17.920919 sec
+2015-06-05 15:59:58 -- test in 34.618391 sec
+2015-06-05 15:59:58 -- of 18583 items:  10853 correct,  3951 plastic only correct,  2316 animals only correct,  1463 both wrong
+2015-06-05 16:00:42 -- test in 78.347547 sec
+2015-06-05 16:00:42 -- of 18583 items:  15465 correct,  1336 plastic only correct,  1308 animals only correct,  474 both wrong
+2015-06-05 16:00:47 -- in 84.349408 sec
+2015-06-05 16:00:47 -- fitting animals
+2015-06-05 16:01:04 -- test in 93.871450 sec
+2015-06-05 16:01:04 -- of 18583 items:  16713 correct,  827 plastic only correct,  686 animals only correct,  357 both wrong
+2015-06-05 16:02:00 -- in 156.827093 sec
+2015-06-05 16:02:00 -- fitting animals
+2015-06-05 16:02:17 -- in 89.268742 sec
+2015-06-05 16:02:27 -- test in 169.665597 sec
+2015-06-05 16:02:27 -- of 18583 items:  18134 correct,  243 plastic only correct,  196 animals only correct,   10 both wrong
+2015-06-05 16:03:01 -- test in 188.707857 sec
+2015-06-05 16:03:01 -- of 18583 items:  18325 correct,  139 plastic only correct,  112 animals only correct,    7 both wrong
+2015-06-05 16:04:19 -- in 139.340114 sec
+2015-06-05 16:04:53 -- test in 156.777942 sec
+2015-06-05 16:04:53 -- of 18583 items:  18544 correct,   24 plastic only correct,   14 animals only correct,    1 both wrong
+2015-06-05 16:06:14 -- test in 114.901790 sec
+2015-06-05 16:06:14 -- of 18583 items:  18568 correct,    7 plastic only correct,    7 animals only correct,    1 both wrong
+2015-06-05 16:06:14 -- [('linear_1.0', 0.007511138916015625, (34.619952917099, (18583, 10853, 3951, 2316, 1463))), ('linear_1.0', 6.2580931186676025, (93.87221598625183, (18583, 16713, 827, 686, 357))), ('linear_1.0', 29.504544258117676, (188.70846796035767, (18583, 18325, 139, 112, 7))), ('linear_1.0', 296.16718220710754, (114.90225410461426, (18583, 18568, 7, 7, 1))), ('linear_1.0', 0.0030727386474609375, (17.359840869903564, (18583, 11538, 2972, 846, 3227))), ('linear_1.0', 0.2562441825866699, (78.34882402420044, (18583, 15465, 1336, 1308, 474))), ('linear_1.0', 14.181610822677612, (169.66666388511658, (18583, 18134, 243, 196, 10))), ('linear_1.0', 173.61812090873718, (156.77855896949768, (18583, 18544, 24, 14, 1)))]
+2015-06-05 16:06:14 -- write output

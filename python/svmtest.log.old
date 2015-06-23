@@ -1,0 +1,72 @@
+2015-05-10 12:43:27 -- using param: {'kernel': 'poly', 'C': 1.0, 'degree': 2}
+2015-05-10 12:43:27 -- fitting plastic
+2015-05-10 12:46:40 -- in 193.931019 sec
+2015-05-10 12:46:40 -- fitting animals
+2015-05-10 12:51:05 -- in 264.777582 sec
+2015-05-10 12:51:07 -- testing...
+2015-05-10 12:52:08 -- test in 61.544030 sec
+2015-05-10 12:52:08 -- of 2061 items:  2015 is correct,   24 did plastic only correct,   22 did animals only correct,    0 did both wrong
+2015-05-10 12:52:08 -- using param: {'kernel': 'poly', 'C': 1.0, 'degree': 3}
+2015-05-10 12:52:08 -- fitting plastic
+2015-05-10 12:58:01 -- in 352.838215 sec
+2015-05-10 12:58:01 -- fitting animals
+2015-05-10 13:06:16 -- in 495.170388 sec
+2015-05-10 13:06:19 -- testing...
+2015-05-10 13:08:11 -- test in 112.526641 sec
+2015-05-10 13:08:11 -- of 2061 items:  1986 is correct,   46 did plastic only correct,   25 did animals only correct,    4 did both wrong
+2015-05-10 13:08:11 -- using param: {'kernel': 'poly', 'C': 1.0, 'degree': 4}
+2015-05-10 13:08:11 -- fitting plastic
+2015-05-10 13:18:00 -- in 588.377089 sec
+2015-05-10 13:18:00 -- fitting animals
+2015-05-10 13:31:04 -- in 783.942880 sec
+2015-05-10 13:31:08 -- testing...
+2015-05-10 13:34:10 -- test in 181.572181 sec
+2015-05-10 13:34:10 -- of 2061 items:  1763 is correct,  169 did plastic only correct,   84 did animals only correct,   45 did both wrong
+2015-05-10 13:34:10 -- using param: {'kernel': 'poly', 'C': 1.0, 'degree': 5}
+2015-05-10 13:34:10 -- fitting plastic
+2015-05-10 13:48:08 -- in 838.082705 sec
+2015-05-10 13:48:08 -- fitting animals
+2015-05-10 14:06:01 -- in 1073.467916 sec
+2015-05-10 14:06:11 -- testing...
+2015-05-10 14:10:20 -- test in 249.344338 sec
+2015-05-10 14:10:20 -- of 2061 items:  1500 is correct,  235 did plastic only correct,   93 did animals only correct,  233 did both wrong
+2015-05-10 14:10:20 -- using param: {'kernel': 'poly', 'C': 1.0, 'degree': 6}
+2015-05-10 14:10:20 -- fitting plastic
+2015-05-10 14:25:46 -- in 925.646059 sec
+2015-05-10 14:25:46 -- fitting animals
+2015-05-10 14:45:21 -- in 1174.673412 sec
+2015-05-10 14:45:32 -- testing...
+2015-05-10 14:50:05 -- test in 272.960188 sec
+2015-05-10 14:50:05 -- of 2061 items:  1225 is correct,  287 did plastic only correct,   53 did animals only correct,  496 did both wrong
+2015-05-10 14:50:05 -- using param: {'kernel': 'poly', 'C': 1.0, 'degree': 7}
+2015-05-10 14:50:05 -- fitting plastic
+2015-05-10 15:05:35 -- in 929.943569 sec
+2015-05-10 15:05:35 -- fitting animals
+2015-05-10 15:25:31 -- in 1195.845758 sec
+2015-05-10 15:25:49 -- testing...
+2015-05-10 15:30:29 -- test in 279.624681 sec
+2015-05-10 15:30:29 -- of 2061 items:  1187 is correct,  305 did plastic only correct,   23 did animals only correct,  546 did both wrong
+2015-05-10 15:30:29 -- using param: {'kernel': 'poly', 'C': 1.0, 'degree': 8}
+2015-05-10 15:30:29 -- fitting plastic
+2015-05-10 15:45:25 -- in 896.580869 sec
+2015-05-10 15:45:25 -- fitting animals
+2015-05-10 16:05:20 -- in 1194.542728 sec
+2015-05-10 16:05:34 -- testing...
+2015-05-10 16:10:15 -- test in 280.990681 sec
+2015-05-10 16:10:15 -- of 2061 items:  1166 is correct,  305 did plastic only correct,   23 did animals only correct,  567 did both wrong
+2015-05-10 16:10:15 -- using param: {'kernel': 'poly', 'C': 1.0, 'degree': 9}
+2015-05-10 16:10:15 -- fitting plastic
+2015-05-10 16:25:09 -- in 893.172113 sec
+2015-05-10 16:25:09 -- fitting animals
+2015-05-10 16:45:12 -- in 1203.880718 sec
+2015-05-10 16:45:29 -- testing...
+2015-05-10 16:50:10 -- test in 280.990318 sec
+2015-05-10 16:50:10 -- of 2061 items:  1155 is correct,  305 did plastic only correct,   22 did animals only correct,  579 did both wrong
+2015-05-10 16:50:10 -- using param: {'kernel': 'rbf', 'C': 1.0, 'gamma': 0.0}
+2015-05-10 16:50:10 -- fitting plastic
+2015-05-10 16:52:00 -- in 110.335037 sec
+2015-05-10 16:52:00 -- fitting animals
+2015-05-10 16:54:03 -- in 122.595914 sec
+2015-05-10 16:54:04 -- testing...
+2015-05-10 16:54:37 -- test in 32.291772 sec
+2015-05-10 16:54:37 -- of 2061 items:  2044 is correct,    6 did plastic only correct,   11 did animals only correct,    0 did 

@@ -3,44 +3,46 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: main.aux
 The style file: abbrvnat.bst
 Database file #1: Tex_sources/bib.bib
-You've used 8 entries,
+Warning--can't use both volume and number fields in csurka2004visual
+You've used 13 entries,
             2773 wiz_defined-function locations,
-            639 strings with 6216 characters,
-and the built_in function-call counts, 4525 in all, are:
-= -- 419
-> -- 256
-< -- 8
-+ -- 86
-- -- 78
-* -- 345
-:= -- 661
-add.period$ -- 27
-call.type$ -- 8
-change.case$ -- 50
-chr.to.int$ -- 8
-cite$ -- 16
-duplicate$ -- 213
-empty$ -- 360
-format.name$ -- 92
-if$ -- 983
+            672 strings with 7217 characters,
+and the built_in function-call counts, 6899 in all, are:
+= -- 628
+> -- 393
+< -- 13
++ -- 133
+- -- 120
+* -- 525
+:= -- 1020
+add.period$ -- 44
+call.type$ -- 13
+change.case$ -- 77
+chr.to.int$ -- 13
+cite$ -- 27
+duplicate$ -- 335
+empty$ -- 557
+format.name$ -- 139
+if$ -- 1493
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 8
-newline$ -- 48
-num.names$ -- 32
-pop$ -- 109
+missing$ -- 13
+newline$ -- 73
+num.names$ -- 52
+pop$ -- 177
 preamble$ -- 1
-purify$ -- 42
+purify$ -- 66
 quote$ -- 0
-skip$ -- 178
+skip$ -- 267
 stack$ -- 0
-substring$ -- 202
-swap$ -- 49
-text.length$ -- 4
+substring$ -- 260
+swap$ -- 73
+text.length$ -- 7
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 88
-warning$ -- 0
-while$ -- 40
+type$ -- 138
+warning$ -- 1
+while$ -- 61
 width$ -- 0
-write$ -- 112
+write$ -- 178
+(There was 1 warning)

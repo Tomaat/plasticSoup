@@ -1,29 +1,29 @@
 \section{Method}
 \label{sec:Method}
 %This section describes the steps taken in this project. First the collection and the annotation of the dataset is explained. Thereafter the used algorithms are described in detail. The code used in this project can be found in appendix \ref{sec:ap-code}
-This section describes the steps taken in this project.
+This section describes the steps undertaken in this project.
 First the pipeline is explained, after which the details of the implementation are stated.
 
 \subsection{Pipeline}
 \label{sec:Method-pipeline}
-As stated in section \ref{sec:Theory} a Convolutional Neural Network has been used as a feature-vector of the image, after which a Support Vector Machine was used for classification.
+As stated in section \ref{sec:Theory}, a CNN has been used as a feature-vector of the image, after which a Support Vector Machine was used for classification.
 
 Several libraries exist that implement a CNN.
-In this project the choice is made to use Caffe \citep{jia2014caffe}.
-This framework is open source and free to use.
-Moreover it has a large community maintaining and developing, can run both on CPU and GPU and has an interface to \texttt{Python}.
+In this project, the choice was made to use Caffe \citep{jia2014caffe} because this framework is open source and free to use.
+Moreover, it has a large community maintaining and developing, can run both on CPU and GPU and has an interface to \texttt{Python}.
 
 The Caffe framework has several pre-trained CNNs.
-In this project the Caffenet network is used, which is an implementation of Alexnet \citep{krizhevsky2012imagenet}. Caffenet is trained on the \textit{ilsvrc12} dataset, however in contrary to Alexnet, the order of pooling and normalisation is swapped. \citeneed
+In this project the Caffenet network was used, which is an implementation of Alexnet \citep{krizhevsky2012imagenet}. Caffenet is trained on the \textit{ilsvrc12} dataset, however in contrary to Alexnet, the order of pooling and normalisation is swapped.
 
-The output of Caffenet is a $1\times1000$ normalised vector, representing the confidence of the respective class.
+The output of Caffenet is a $1\times1000$ probability vector, representing the confidence of the respective class.
 However, the second-to-last layer of the network is used as feature-vector. This layer is a $10\times4096$ vector; $10$ rows because the network uses five overlapping `sub-images' (four corners and one centre) and their mirrored image, to improve accuracy.
 Each row of $4096$ numbers is an abstract representation of the image, trained by the network.
 To reduce complexity, the mean over the `sub-images' is used to compress the second-to-last layer data in a $1\times4096$ vector.
 
-This 4096 dimensional vector is then used as the space for the SVM.
-The three possible hyperplanes as described in section \ref{sec:Theory-class} were tested with several parameters.
+This vector was then used as a 4096 dimensional space for the SVM.
+The three possible hyperplanes as described in section \ref{sec:Theory-class} were tested using several parameters.
 Tests were conducted by training the SVM on the test-data, and using the validate-data to find the best parameters.
+Figure \ref{fig:pipeline} shows a visualisation of the pipeline used in this project.
 
 Three different types of hyperplanes were used.
 A polygonal plane was tested with degrees of $2$ till $9$.
@@ -31,34 +31,47 @@ An RBF plane was tested with gammas of $0.0$ till $1.0$ with steps of $0.1$.
 Lastly a linear plane was tested.
 Each of the twenty SVM models were trained on part of the train-set, with intervals of order of magnitude; the sizes of the train-set were: 14, 140, 1400 and 14000 images.
 
+\begin{figure}
+\centering
+\ifx\showfig\undefined
+\input{graphs/pipeline.tex} \fi
+\caption{Schematics of pipeline used in this project. The image is classified using a CNN, the mean of the second-to-last layer is input for two SVMs which give the output whether detecting plastic or animals.}
+\label{fig:pipeline}
+\end{figure}
+
+
 \subsection{Impelemtation}
 \label{sec:Method-implementation}
-\Python has been used to write the code necessary for the pipeline.
-Not only because Caffe has an interface in \Python, but also because of the many libraries available in \Python.
-
+{\Python} was used to write the code necessary for the pipeline.
+This choice was made not only because Caffe has an interface in \Python, but also because of the many libraries available in \Python.
 The library that allows the use of matrices and basic linear algebra operations is \texttt{numpy}.
 Another library called \texttt{scikit.learn} has an implementation of an SVM, which has been used in this project.
-The code used in this project can be found in appendix \ref{sec:ap-code}
+The code used in this project can be found in appendix \ref{sec:ap-code}.
 
-All models are trained and tested on a laptop with 2$^{nd}$ generation i5 CPU, 4GB RAM and without using a GPU. Therefore time testing and training took in this project should be evaluated relatively to each other.
+All models were trained and tested on a laptop with 2$^{nd}$ generation i5 CPU, 4GB RAM and without using a GPU. Therefore, the testing and training time of this project should be evaluated relatively to each other.
+Furthermore, because no GPU was used, running Caffenet took a considerable amount of time. Therefore the output of the network was saved for each image, in order to speed up the training of the SVM.
 
-Furthermore, because no GPU was used, running Caffenet took a considerable amount of time. Therefore the output of the network had been saved for each image, to speed up the training of the SVM.
-
-\subsection{Detecting location of plastic}
+\subsection{Detecting the location of plastic}
 \label{sec:Method-location}
-After testing the pipeline to detect plastic and marine life on images, small adaptations were made to find the location of the classes in the image.
-When the system developed in this project is used for practical applications, location of the plastic is important.
+After testing the pipeline to detect plastic and marine life on images, small adaptations were made in order to find the location of the classes in the image.
+When the system developed in this project is eventually used for practical applications, finding the exact location of the plastic is important.
 
 To distinguish blobs in an image, several techniques could be used; however, as a prove of feasibility, no complex algorithms were used in this project.
-A new piece of code was written that segments the image in sections and treats each of them as an image in the original pipeline.
+A new piece of code was written that segmented the image in sections and treated each of them as an image in the original pipeline.
 
-The outcome of each segmented piece of the image are cumulated to show the confidence of detection of the classes at the given location in the image.
-
-Because there is not labelled data of these segmented images, the evaluation could not be done on a large scale.
+The outcome of each segmented piece of the image was cumulated to show the confidence of detection of the classes at the given location in the image.
+Because there is no labelled data of these segmented images, the evaluation could not be done on a large scale.
 Therefore no sizeable experiments could be conducted to test the accuracy of locating of the classes.
 However, in section \ref{sec:Results-location} the outcome of several tests is shown.
 
-
+\begin{figure}%[h!tb]
+\centering
+\ifx\showfig\undefined
+\input{graphs/locpip.tex}
+\fi
+\caption{Schematics of the second pipeline for localisation. The image is segmented into pieces. Each piece is pulled through the original pipeline, resulting in images with intensity according to the output of the SVM. All the pieces are added together at the pixel-location, which results in an image showing the confidence of the location of plastic or animals}
+\label{fig:locpip}
+\end{figure}
 
 
 

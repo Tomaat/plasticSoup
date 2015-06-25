@@ -1,4 +1,4 @@
-\begin{thebibliography}{8}
+\begin{thebibliography}{13}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -10,6 +10,25 @@ D.~Barnes and P.~Milner.
 \newblock Drifting plastic and its consequences for sessile organism dispersal
   in the atlantic ocean.
 \newblock \emph{Marine Biology}, 146\penalty0 (4):\penalty0 815--825, 2005.
+
+\bibitem[Boser et~al.(1992)Boser, Guyon, and Vapnik]{boser1992training}
+B.~E. Boser, I.~M. Guyon, and V.~N. Vapnik.
+\newblock A training algorithm for optimal margin classifiers.
+\newblock In \emph{Proceedings of the fifth annual workshop on Computational
+  learning theory}, pages 144--152. ACM, 1992.
+
+\bibitem[Cheng et~al.(2014)Cheng, Zhang, Lin, and Torr]{BingObj2014}
+M.-M. Cheng, Z.~Zhang, W.-Y. Lin, and P.~H.~S. Torr.
+\newblock {BING}: Binarized normed gradients for objectness estimation at
+  300fps.
+\newblock In \emph{IEEE CVPR}, 2014.
+
+\bibitem[Csurka et~al.(2004)Csurka, Dance, Fan, Willamowski, and
+  Bray]{csurka2004visual}
+G.~Csurka, C.~Dance, L.~Fan, J.~Willamowski, and C.~Bray.
+\newblock Visual categorization with bags of keypoints.
+\newblock In \emph{Workshop on statistical learning in computer vision, ECCV},
+  volume~1, pages 1--2. Prague, 2004.
 
 \bibitem[Fukushima(1980)]{fukushima1980neocognition}
 K.~Fukushima.
@@ -40,6 +59,12 @@ A.~Krizhevsky, I.~Sutskever, and G.~E. Hinton.
 \newblock In \emph{Advances in neural information processing systems}, pages
   1097--1105, 2012.
 
+\bibitem[Mensink(2012)]{mensink12phd}
+T.~Mensink.
+\newblock \emph{Learning Image Classification and Retrieval Models}.
+\newblock PhD thesis, Universit\'{e} de Grenoble, INRIA-Grenoble, and Xerox
+  Research Centre Europe, 2012.
+
 \bibitem[Moore and Phillips(2011)]{moore2011plastic}
 C.~C. Moore and C.~Phillips.
 \newblock Plastic ocean.
@@ -52,6 +77,11 @@ A.~S. Razavian, H.~Azizpour, J.~Sullivan, and S.~Carlsson.
 \newblock Cnn features off-the-shelf: an astounding baseline for recognition.
 \newblock In \emph{Computer Vision and Pattern Recognition Workshops (CVPRW),
   2014 IEEE Conference on}, pages 512--519. IEEE, 2014.
+
+\bibitem[Szeliski(2010)]{szeliski2010computer}
+R.~Szeliski.
+\newblock \emph{Computer vision: algorithms and applications}.
+\newblock Springer Science \& Business Media, 2010.
 
 \bibitem[Zeiler and Fergus(2014)]{zeiler2014visualizing}
 M.~D. Zeiler and R.~Fergus.

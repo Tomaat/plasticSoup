@@ -11,15 +11,22 @@
 
 \section{\texttt{Python} code of the project}
 \label{sec:ap-code}
+Code can be found on \url{github.com/Tomaat/plasticSoup}.
+%Two programs are included, the first being the java-program used for annotating, the second the \Python-code used for the localisation-pipeline.
+
+%\subsection{\texttt{Annotator.java}}
+%\lstinputlisting[language=Java]{code/Annotator.java}
+%\subsection{\texttt{segmenttest2.py}}
+%\lstinputlisting[language=Python]{code/segmenttest2.py}
+
 
 \section{Output of \texttt{Python} code}
 \label{sec:ap-out}
-
 \subsection{SVM}
 \ifx\showapp\undefined
 \begin{tabular}{ p{0.2\textwidth } | p{0.8\textwidth } }
 abbrivation & meaning \\ \hline
-type & which type of model used for the fitting hyperplane; poly mean polynomial, where the last digit stands for the degree; rbf is gaussian, where the last digit stands for gamma \\
+type & which type of model used for the fitting hyperplane; poly mean polynomial, where the last digit stands for the degree; rbf has the last digit stand for gamma \\
 Ttrain & the amount of time in seconds the complete training took \\
 Ttest & the amount of time in seconds the complete testing took \\
 Dsize & the amount of data-points used for training the model \\

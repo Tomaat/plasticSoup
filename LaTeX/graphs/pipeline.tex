@@ -1,0 +1,51 @@
+\centerline{
+\begin{minipage}{\widefigwidth}
+\tikzstyle{image} = [rectangle, draw, fill=blue!20, 
+    text width=1.5cm, text centered, minimum height=1cm]
+\tikzstyle{cnn} = [rectangle, draw, fill=orange!40,
+    text width=2cm, text centered, rounded corners, minimum height=1cm]
+\tikzstyle{vector10} = [rectangle, draw, fill=gray!40, 
+    text width=1.5cm, text centered, rounded corners, minimum height=1cm]
+\tikzstyle{vector1} = [rectangle, draw, fill=gray!20, 
+    text width=1.5cm, text centered, rounded corners, minimum height=1cm]
+\tikzstyle{svm} = [rectangle, draw, fill=purple!20, 
+    text width=1.5cm, text centered, rounded corners, minimum height=1cm]
+\tikzstyle{output} = [rectangle, fill=white!0,
+    text width=4cm, text centered, rounded corners, minimum height=1cm]
+\tikzstyle{labm} = [rectangle, text width=2cm, 
+	text centered, minimum height=1cm]
+\tikzstyle{line} = [draw, -latex']
+\resizebox{\textwidth}{!}{
+\begin{tikzpicture}[node distance = 0.5cm, auto]
+	\node [image] (a) at (-7,0) {Image};
+	\node [labm, above= of a] (at) {Input};
+%
+	\node [cnn, right=of a] (b) {Caffenet};
+	\node [labm, above= of b] (bt) {CNN};
+%
+	\node [vector10, right=of b] (c) {$10\times4096$};
+	\node [labm, above= of c] (ct) {Feature-vector};
+%
+	\node [vector1, right= of c] (d) {$1\times4096$};
+	\node [labm, above= of d] (dt) {Feature-vector};
+%
+	\node [svm, right= of d] (e) {Animals};
+	\node [svm, below= of e] (f) {Plastic};
+	\node [labm, above= of e] (et) {SMV};
+%
+	\node [output, right= of e] (g) {$[0,1]$ showing animals};
+	\node [output, right= of f] (h) {$[0,1]$ showing plastic};
+	\node [labm, above= of g] (gt) {Output};
+%
+%
+	\path [line] (a) -- (b);
+	\path [line] (b) -- (c);
+	\path [line] (c) -- (d);
+	\path [line] (d) -- (e);
+	\path [line] (d) -- (f);
+	\path [line] (e) -- (g);
+	\path [line] (f) -- (h);
+\end{tikzpicture}
+}
+\end{minipage}
+}

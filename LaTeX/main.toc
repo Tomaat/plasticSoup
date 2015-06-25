@@ -1,22 +1,21 @@
 \select@language {british}
-\contentsline {section}{\numberline {1}Introduction}{2}{section.1}
-\contentsline {subsection}{\numberline {1.1}Plastic Soup: Environmental problem}{2}{subsection.1.1}
-\contentsline {subsection}{\numberline {1.2}Project outline}{3}{subsection.1.2}
-\contentsline {subsection}{\numberline {1.3}Outline of the thesis chapters}{4}{subsection.1.3}
-\contentsline {section}{\numberline {2}Theoretical framework}{5}{section.2}
-\contentsline {subsection}{\numberline {2.1}Image representations}{5}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}Image classification}{6}{subsection.2.2}
-\contentsline {section}{\numberline {3}Dataset of Plastic Soup images}{8}{section.3}
+\contentsline {section}{\numberline {1}Introduction}{3}{section.1}
+\contentsline {subsection}{\numberline {1.1}Plastic Soup: An environmental problem}{3}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Project outline}{5}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}Outline of the thesis chapters}{5}{subsection.1.3}
+\contentsline {section}{\numberline {2}Theoretical framework}{6}{section.2}
+\contentsline {subsection}{\numberline {2.1}Image representations}{6}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Image classification}{8}{subsection.2.2}
+\contentsline {section}{\numberline {3}Dataset of Plastic Soup images}{9}{section.3}
 \contentsline {section}{\numberline {4}Method}{10}{section.4}
 \contentsline {subsection}{\numberline {4.1}Pipeline}{10}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Impelemtation}{10}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Detecting location of plastic}{11}{subsection.4.3}
-\contentsline {section}{\numberline {5}Results}{12}{section.5}
-\contentsline {subsection}{\numberline {5.1}Pipeline}{12}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}Detecting location of plastic}{12}{subsection.5.2}
-\contentsline {section}{\numberline {6}Conclusion}{17}{section.6}
-\contentsline {section}{\numberline {7}Discussion}{18}{section.7}
+\contentsline {subsection}{\numberline {4.2}Impelemtation}{12}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Detecting the location of plastic}{12}{subsection.4.3}
+\contentsline {section}{\numberline {5}Results}{13}{section.5}
+\contentsline {subsection}{\numberline {5.1}Pipeline}{13}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Detecting the location of plastic}{14}{subsection.5.2}
+\contentsline {section}{\numberline {6}Discussion}{17}{section.6}
 \global \c@tocdepth 2\relax 
-\contentsline {section}{\numberline {A}\texttt {Python} code of the project}{21}{appendix.A}
-\contentsline {section}{\numberline {B}Output of \texttt {Python} code}{21}{appendix.B}
-\contentsline {subsection}{\numberline {B.i}SVM}{21}{subsection.B.1}
+\contentsline {section}{\numberline {A}\texttt {Python} code of the project}{23}{appendix.A}
+\contentsline {section}{\numberline {B}Output of \texttt {Python} code}{23}{appendix.B}
+\contentsline {subsection}{\numberline {B.i}SVM}{23}{subsection.B.1}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.4.8)  26 JUN 2015 13:51
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.4.8)  26 JUN 2015 14:25
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1655,7 +1655,7 @@ Overfull \hbox (6.52132pt too wide) in paragraph at lines 15--17
 (./graphs/pipeline.tex) [12
 
 ] (./graphs/locpip.tex <xymatrix
-<images/segment/253_01__plastic__.png, id=277, 483.4863pt x 267.399pt>
+<images/segment/253_01__plastic__.png, id=278, 483.4863pt x 267.399pt>
 File: images/segment/253_01__plastic__.png Graphic file (type png)
 
 <use images/segment/253_01__plastic__.png>
@@ -1663,7 +1663,7 @@ Package pdftex.def Info: images/segment/253_01__plastic__.png used on input lin
 e 193.
 (pdftex.def)             Requested size: 483.4851pt x 267.39835pt.
 
-<images/segment/253_01__animals__.png, id=279, 486.3771pt x 268.1217pt>
+<images/segment/253_01__animals__.png, id=280, 486.3771pt x 268.1217pt>
 File: images/segment/253_01__animals__.png Graphic file (type png)
 
 <use images/segment/253_01__animals__.png>
@@ -1695,9 +1695,9 @@ File: images/segment/253_01__animals__.png Graphic file (type png)
 Package pdftex.def Info: images/segment/253_01__animals__.png used on input lin
 e 193.
 (pdftex.def)             Requested size: 486.37592pt x 268.12105pt.
- 826>))
-(./Report/sections/results.tex [13] [14 <./images/segment/253_01__plastic__.png
-> <./images/segment/253_01__animals__.png>] (./graphs/c14.tex
+ 826>)) [13]
+(./Report/sections/results.tex [14 <./images/segment/253_01__plastic__.png> <./
+images/segment/253_01__animals__.png>] (./graphs/c14.tex
 Missing character: There is no / in font nullfont!
 Missing character: There is no p in font nullfont!
 Missing character: There is no g in font nullfont!
@@ -1849,243 +1849,243 @@ Missing character: There is no ) in font nullfont!
 Missing character: There is no , in font nullfont!
 )
 
-LaTeX Warning: Float too large for page by 13.95183pt on input line 61.
+LaTeX Warning: Float too large for page by 13.95183pt on input line 60.
 
 (./graphs/lin1.tex) (./graphs/lin3.tex) (./graphs/lin2.tex)
-<images/segment/6_01__animals__.png, id=307, 482.7636pt x 269.5671pt>
+<images/segment/6_01__animals__.png, id=309, 482.7636pt x 269.5671pt>
 File: images/segment/6_01__animals__.png Graphic file (type png)
 
 <use images/segment/6_01__animals__.png>
 Package pdftex.def Info: images/segment/6_01__animals__.png used on input line 
-109.
+108.
 (pdftex.def)             Requested size: 79.20044pt x 44.22162pt.
 
-<images/segment/6_01__image__.png, id=308, 481.3182pt x 264.5082pt>
+<images/segment/6_01__image__.png, id=310, 481.3182pt x 264.5082pt>
 File: images/segment/6_01__image__.png Graphic file (type png)
 
 <use images/segment/6_01__image__.png>
-Package pdftex.def Info: images/segment/6_01__image__.png used on input line 11
-0.
+Package pdftex.def Info: images/segment/6_01__image__.png used on input line 10
+9.
 (pdftex.def)             Requested size: 79.20044pt x 43.52492pt.
 
-<images/segment/6_01__plastic__.png, id=309, 486.3771pt x 267.399pt>
+<images/segment/6_01__plastic__.png, id=311, 486.3771pt x 267.399pt>
 File: images/segment/6_01__plastic__.png Graphic file (type png)
 
 <use images/segment/6_01__plastic__.png>
 Package pdftex.def Info: images/segment/6_01__plastic__.png used on input line 
-111.
+110.
 (pdftex.def)             Requested size: 79.20044pt x 43.53954pt.
 
-<images/segment/31_11__animals__.png, id=310, 486.3771pt x 265.9536pt>
+<images/segment/31_11__animals__.png, id=312, 486.3771pt x 265.9536pt>
 File: images/segment/31_11__animals__.png Graphic file (type png)
 
 <use images/segment/31_11__animals__.png>
 Package pdftex.def Info: images/segment/31_11__animals__.png used on input line
- 113.
+ 112.
 (pdftex.def)             Requested size: 79.20044pt x 43.30418pt.
 
-<images/segment/31_11__image__.png, id=311, 484.209pt x 267.399pt>
+<images/segment/31_11__image__.png, id=313, 484.209pt x 267.399pt>
 File: images/segment/31_11__image__.png Graphic file (type png)
 
 <use images/segment/31_11__image__.png>
 Package pdftex.def Info: images/segment/31_11__image__.png used on input line 1
-14.
+13.
 (pdftex.def)             Requested size: 79.20044pt x 43.73538pt.
 
-<images/segment/31_11__plastic__.png, id=312, 487.8225pt x 268.1217pt>
+<images/segment/31_11__plastic__.png, id=314, 487.8225pt x 268.1217pt>
 File: images/segment/31_11__plastic__.png Graphic file (type png)
 
 <use images/segment/31_11__plastic__.png>
 Package pdftex.def Info: images/segment/31_11__plastic__.png used on input line
- 115.
+ 114.
 (pdftex.def)             Requested size: 79.20044pt x 43.53038pt.
 File: images/segment/253_01__animals__.png Graphic file (type png)
 
 <use images/segment/253_01__animals__.png>
 Package pdftex.def Info: images/segment/253_01__animals__.png used on input lin
-e 117.
+e 116.
 (pdftex.def)             Requested size: 79.20044pt x 43.65721pt.
 
-<images/segment/253_01__image__.png, id=313, 484.209pt x 263.7855pt>
+<images/segment/253_01__image__.png, id=315, 484.209pt x 263.7855pt>
 File: images/segment/253_01__image__.png Graphic file (type png)
 
 <use images/segment/253_01__image__.png>
 Package pdftex.def Info: images/segment/253_01__image__.png used on input line 
-118.
+117.
 (pdftex.def)             Requested size: 79.20044pt x 43.14436pt.
 File: images/segment/253_01__plastic__.png Graphic file (type png)
 
 <use images/segment/253_01__plastic__.png>
 Package pdftex.def Info: images/segment/253_01__plastic__.png used on input lin
-e 119.
+e 118.
 (pdftex.def)             Requested size: 79.20044pt x 43.80067pt.
 
-<images/segment/299_00__animals__.png, id=314, 483.4863pt x 268.8444pt>
+<images/segment/299_00__animals__.png, id=316, 483.4863pt x 268.8444pt>
 File: images/segment/299_00__animals__.png Graphic file (type png)
 
 <use images/segment/299_00__animals__.png>
 Package pdftex.def Info: images/segment/299_00__animals__.png used on input lin
-e 121.
+e 120.
 (pdftex.def)             Requested size: 79.20044pt x 44.03743pt.
 
-<images/segment/299_00__image__.png, id=315, 483.4863pt x 267.399pt>
+<images/segment/299_00__image__.png, id=317, 483.4863pt x 267.399pt>
 File: images/segment/299_00__image__.png Graphic file (type png)
 
 <use images/segment/299_00__image__.png>
 Package pdftex.def Info: images/segment/299_00__image__.png used on input line 
-122.
+121.
 (pdftex.def)             Requested size: 79.20044pt x 43.80067pt.
 
-<images/segment/299_00__plastic__.png, id=316, 484.209pt x 265.9536pt>
+<images/segment/299_00__plastic__.png, id=318, 484.209pt x 265.9536pt>
 File: images/segment/299_00__plastic__.png Graphic file (type png)
 
 <use images/segment/299_00__plastic__.png>
 Package pdftex.def Info: images/segment/299_00__plastic__.png used on input lin
-e 123.
+e 122.
 (pdftex.def)             Requested size: 79.20044pt x 43.49898pt.
 
-<images/segment/401_10__animals__.png, id=317, 485.6544pt x 273.1806pt>
+<images/segment/401_10__animals__.png, id=319, 485.6544pt x 273.1806pt>
 File: images/segment/401_10__animals__.png Graphic file (type png)
 
 <use images/segment/401_10__animals__.png>
 Package pdftex.def Info: images/segment/401_10__animals__.png used on input lin
-e 125.
+e 124.
 (pdftex.def)             Requested size: 79.20044pt x 44.54762pt.
 
-<images/segment/401_10__image__.png, id=318, 487.8225pt x 266.6763pt>
+<images/segment/401_10__image__.png, id=320, 487.8225pt x 266.6763pt>
 File: images/segment/401_10__image__.png Graphic file (type png)
 
 <use images/segment/401_10__image__.png>
 Package pdftex.def Info: images/segment/401_10__image__.png used on input line 
-126.
+125.
 (pdftex.def)             Requested size: 79.20044pt x 43.29572pt.
 
-<images/segment/401_10__plastic__.png, id=319, 487.8225pt x 265.9536pt>
+<images/segment/401_10__plastic__.png, id=321, 487.8225pt x 265.9536pt>
 File: images/segment/401_10__plastic__.png Graphic file (type png)
 
 <use images/segment/401_10__plastic__.png>
 Package pdftex.def Info: images/segment/401_10__plastic__.png used on input lin
-e 127.
+e 126.
 (pdftex.def)             Requested size: 79.20044pt x 43.17839pt.
 
-<images/segment/701_11__animals__.png, id=320, 485.6544pt x 265.9536pt>
+<images/segment/701_11__animals__.png, id=322, 485.6544pt x 265.9536pt>
 File: images/segment/701_11__animals__.png Graphic file (type png)
 
 <use images/segment/701_11__animals__.png>
 Package pdftex.def Info: images/segment/701_11__animals__.png used on input lin
-e 129.
+e 128.
 (pdftex.def)             Requested size: 79.20044pt x 43.36913pt.
 
-<images/segment/701_11__image__.png, id=321, 484.9317pt x 267.399pt>
+<images/segment/701_11__image__.png, id=323, 484.9317pt x 267.399pt>
 File: images/segment/701_11__image__.png Graphic file (type png)
 
 <use images/segment/701_11__image__.png>
 Package pdftex.def Info: images/segment/701_11__image__.png used on input line 
-130.
+129.
 (pdftex.def)             Requested size: 79.20044pt x 43.6701pt.
 
-<images/segment/701_11__plastic__.png, id=322, 486.3771pt x 268.8444pt>
+<images/segment/701_11__plastic__.png, id=324, 486.3771pt x 268.8444pt>
 File: images/segment/701_11__plastic__.png Graphic file (type png)
 
 <use images/segment/701_11__plastic__.png>
 Package pdftex.def Info: images/segment/701_11__plastic__.png used on input lin
-e 131.
+e 130.
 (pdftex.def)             Requested size: 79.20044pt x 43.77489pt.
 
-<images/segment/2737_10__animals__.png, id=323, 483.4863pt x 265.9536pt>
+<images/segment/2737_10__animals__.png, id=325, 483.4863pt x 265.9536pt>
 File: images/segment/2737_10__animals__.png Graphic file (type png)
 
 <use images/segment/2737_10__animals__.png>
 Package pdftex.def Info: images/segment/2737_10__animals__.png used on input li
-ne 133.
+ne 132.
 (pdftex.def)             Requested size: 79.20044pt x 43.5639pt.
 
-<images/segment/2737_10__image__.png, id=324, 487.0998pt x 270.2898pt>
+<images/segment/2737_10__image__.png, id=326, 487.0998pt x 270.2898pt>
 File: images/segment/2737_10__image__.png Graphic file (type png)
 
 <use images/segment/2737_10__image__.png>
 Package pdftex.def Info: images/segment/2737_10__image__.png used on input line
- 134.
+ 133.
 (pdftex.def)             Requested size: 79.20044pt x 43.94838pt.
 
-<images/segment/2737_10__plastic__.png, id=325, 481.3182pt x 264.5082pt>
+<images/segment/2737_10__plastic__.png, id=327, 481.3182pt x 264.5082pt>
 File: images/segment/2737_10__plastic__.png Graphic file (type png)
 
 <use images/segment/2737_10__plastic__.png>
 Package pdftex.def Info: images/segment/2737_10__plastic__.png used on input li
-ne 135.
+ne 134.
 (pdftex.def)             Requested size: 79.20044pt x 43.52492pt.
 
-<images/segment/4409_01__animals__.png, id=326, 485.6544pt x 268.1217pt>
+<images/segment/4409_01__animals__.png, id=328, 485.6544pt x 268.1217pt>
 File: images/segment/4409_01__animals__.png Graphic file (type png)
 
 <use images/segment/4409_01__animals__.png>
 Package pdftex.def Info: images/segment/4409_01__animals__.png used on input li
-ne 137.
+ne 136.
 (pdftex.def)             Requested size: 79.20044pt x 43.72267pt.
 
-<images/segment/4409_01__image__.png, id=327, 487.0998pt x 265.2309pt>
+<images/segment/4409_01__image__.png, id=329, 487.0998pt x 265.2309pt>
 File: images/segment/4409_01__image__.png Graphic file (type png)
 
 <use images/segment/4409_01__image__.png>
 Package pdftex.def Info: images/segment/4409_01__image__.png used on input line
- 138.
+ 137.
 (pdftex.def)             Requested size: 79.20044pt x 43.12581pt.
 
-<images/segment/4409_01__plastic__.png, id=328, 491.436pt x 271.0125pt>
+<images/segment/4409_01__plastic__.png, id=330, 491.436pt x 271.0125pt>
 File: images/segment/4409_01__plastic__.png Graphic file (type png)
 
 <use images/segment/4409_01__plastic__.png>
 Package pdftex.def Info: images/segment/4409_01__plastic__.png used on input li
-ne 139.
+ne 138.
 (pdftex.def)             Requested size: 79.20044pt x 43.67302pt.
 
-<images/segment/5053_10__animals__.png, id=329, 485.6544pt x 264.5082pt>
+<images/segment/5053_10__animals__.png, id=331, 485.6544pt x 264.5082pt>
 File: images/segment/5053_10__animals__.png Graphic file (type png)
 
 <use images/segment/5053_10__animals__.png>
 Package pdftex.def Info: images/segment/5053_10__animals__.png used on input li
-ne 141.
+ne 140.
 (pdftex.def)             Requested size: 79.20044pt x 43.13342pt.
 
-<images/segment/5053_10__image__.png, id=330, 487.0998pt x 264.5082pt>
+<images/segment/5053_10__image__.png, id=332, 487.0998pt x 264.5082pt>
 File: images/segment/5053_10__image__.png Graphic file (type png)
 
 <use images/segment/5053_10__image__.png>
 Package pdftex.def Info: images/segment/5053_10__image__.png used on input line
- 142.
+ 141.
 (pdftex.def)             Requested size: 79.20044pt x 43.0083pt.
 
-<images/segment/5053_10__plastic__.png, id=331, 485.6544pt x 268.1217pt>
+<images/segment/5053_10__plastic__.png, id=333, 485.6544pt x 268.1217pt>
 File: images/segment/5053_10__plastic__.png Graphic file (type png)
 
 <use images/segment/5053_10__plastic__.png>
 Package pdftex.def Info: images/segment/5053_10__plastic__.png used on input li
-ne 143.
+ne 142.
 (pdftex.def)             Requested size: 79.20044pt x 43.72267pt.
 
-<images/segment/20607_01__animals__.png, id=332, 485.6544pt x 276.7941pt>
+<images/segment/20607_01__animals__.png, id=334, 485.6544pt x 276.7941pt>
 File: images/segment/20607_01__animals__.png Graphic file (type png)
 
 <use images/segment/20607_01__animals__.png>
 Package pdftex.def Info: images/segment/20607_01__animals__.png used on input l
-ine 145.
+ine 144.
 (pdftex.def)             Requested size: 79.20044pt x 45.13689pt.
 
-<images/segment/20607_01__image__.png, id=333, 487.8225pt x 277.5168pt>
+<images/segment/20607_01__image__.png, id=335, 487.8225pt x 277.5168pt>
 File: images/segment/20607_01__image__.png Graphic file (type png)
 
 <use images/segment/20607_01__image__.png>
 Package pdftex.def Info: images/segment/20607_01__image__.png used on input lin
-e 146.
+e 145.
 (pdftex.def)             Requested size: 79.20044pt x 45.05571pt.
 
-<images/segment/20607_01__plastic__.png, id=334, 482.0409pt x 280.4076pt>
+<images/segment/20607_01__plastic__.png, id=336, 482.0409pt x 280.4076pt>
 File: images/segment/20607_01__plastic__.png Graphic file (type png)
 
 <use images/segment/20607_01__plastic__.png>
 Package pdftex.def Info: images/segment/20607_01__plastic__.png used on input l
-ine 147.
+ine 146.
 (pdftex.def)             Requested size: 79.20044pt x 46.06844pt.
 ) (./Report/sections/discussion.tex [15] [16] [17] [18] [19 <./images/segment/6
 _01__animals__.png> <./images/segment/6_01__image__.png> <./images/segment/6_01
@@ -2177,7 +2177,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 86.
 Here is how much of TeX's memory you used:
  37338 strings out of 495032
  765718 string characters out of 6181719
- 1197560 words of memory out of 5000000
+ 1199812 words of memory out of 5000000
  39660 multiletter control sequences out of 15000+600000
  18577 words of font info for 77 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -2207,9 +2207,9 @@ c/amsfonts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
 onts/cm/cmtt9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/wasy/wasy10
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/public/xypic/xyatip10.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/public/xypic/xybtip10.pfb>
-Output written on main.pdf (28 pages, 5894453 bytes).
+Output written on main.pdf (28 pages, 5895167 bytes).
 PDF statistics:
- 545 PDF objects out of 1000 (max. 8388607)
+ 546 PDF objects out of 1000 (max. 8388607)
  88 named destinations out of 1000 (max. 500000)
  395 words of extra memory for PDF output out of 10000 (max. 10000000)
 

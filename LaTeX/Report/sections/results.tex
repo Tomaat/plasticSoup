@@ -17,14 +17,13 @@ Both the search for optimal parameters of the SVM and the outcome of several tes
 
 \subsection{Pipeline}
 \label{sec:Results-SVM}
-The outcome of the different parameters the pipeline was tested with can be found in appendix \ref{sec:ap-out}.
+The outcome of the different parameters the pipeline was tested which can be found in appendix \ref{sec:ap-out}.
 Several details of the raw output are visualised and shown in this section.
 The accuracy shown in this section is calculated by dividing the correct labelled images by the total amount of images. The formula below shows this calculation:
-\[
+{\small \[
 \frac{\#(Outcome_{True}\,and\,Label_{True})+\#(Outcome_{False}\,and\,Label_{False})}{\#tested\,images}
-\]
-
-The time the training and testing of the SVM took was calculated by using the difference in \textit{System time} from start to finish of a run.
+\]}
+\indent The time the training and testing of the SVM took was calculated by using the difference in \textit{System time} from start to finish of a run.
 Because the data from the CNN was saved on a hard drive and imported in RAM, that time is not included in these tests.
 
 Figure \ref{fig:c14} shows how each of the SVM models perform and what time it took to train and test.

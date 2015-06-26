@@ -58,6 +58,7 @@ To distinguish blobs in an image, several techniques could be used; however, as 
 A new piece of code was written that segmented the image in sections and treated each of them as an image in the original pipeline.
 
 The outcome of each segmented piece of the image was cumulated to show the confidence of detection of the classes at the given location in the image.
+Figure \ref{fig:locpip} shows the adaptation to the original pipeline that results in the localisation-pipeline.
 Because there was no labelled data of these segmented images, the evaluation could not be done on a large scale.
 Therefore no sizeable experiments could be conducted to test the accuracy of locating of the classes.
 However, in section \ref{sec:Results-location} the outcome of several tests is shown.

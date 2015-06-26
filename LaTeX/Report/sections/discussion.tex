@@ -36,15 +36,15 @@ The results show the same trend as before: gaining a high accuracy, even even tr
 Nevertheless, as the test of figure \ref{fig:lin2} shows, a high accuracy can also be obtained with a small amount of train-data, and a large test-set.
 The test in this figure used both the above water and below water viewpoints from the dataset in a single test, increasing the amount of variance between the images.
 \fi
-In this case overfitting when half the dataset is used is also probable, nevertheless, the model also shows accuracy of more than 90\% when trained on merely a small part of the train-set.
+In this case overfitting when half the dataset is used is very unlikely, since the model also shows an accuracy of more than 90\% when trained on merely a small part of the train-set.
 
 The localisation experiments however had less satisfying results.
-The confidence of detecting plastic or animals does not conform consequently to what is shown on the image.
-This could explained by the fact that the system learned to detect plastic from a distance.
+The confidence of detecting plastic or animals does not conform consequently to what is shown in the image.
+This could be explained by the fact that the system learned to detect plastic from a distance.
 While training for image classification, many pixels described the existence of plastic. In the localisation experiments however, a smaller amount of pixels was used for classification, making it harder for the pipeline to recognise the plastic on a different scale.
 Furthermore, the sub-images are more zoomed than a full image.
 Therefore the plastic has to be recognised in a more closed-up fashion than the system was trained on; instead of detecting much plastic together, single plastic objects now need to be recognized.
-This could explain why the system had difficulties localising the plastic and animals within the images.
+This could explain why the system had difficulties localising plastic and animals within the images.
 
 %===evaluatie
 %-weinig interessante dataset
@@ -67,12 +67,12 @@ The results show nonetheless how this pipeline could be used to detect Plastic S
 %-localisatie verbeteren mbv BING oid
 %\todo{stukje over vervolgonderzoek, oa verbeteren plastic-herkenning (ook locatie) en maken van autonomous agent voor schepen}
 %\paragraph{}
-This project showed that a pre-trained CNN in combination with a linear SVM could detect images containing either of two classes.
+This project showed that a pre-trained CNN in combination with a linear SVM can detect images containing either of two classes.
 Further research in this domain could try to improve the system made in this project.
 An improved dataset with more distributed classes and less similarity between the images in combination with training the data on more than one scale, could increase the performance on localisation of plastic within an image.
 Projects using this method, should also keep in mind that cross-validation on the hyper-parameters could improve the results if they are not satisfactory.
 
-An other example to improve the localisation of the plastic within the images, are the use of other algorithms.
+An other example to improve the localisation of the plastic within the images, is the use of other algorithms.
 If more complex algorithms are used for object detection in the image, the blobs resulting from these algorithms could be input for the pipeline, instead of the now used segmentation-pyramid.
 One of the algorithms that could be used for this is BING \citep{BingObj2014}, however this project did not have the time to implement one of these algorithms.
 

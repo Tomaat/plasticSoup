@@ -3,7 +3,7 @@
 %wat, waar, waarom
 %maatschappelijke bijdrage van het project
 The environment is constantly being influenced by humanity and this influence has been debated since the hippie movement in the '60s.
-The debate whether humanity puts too much pressure on the environment has only increased in recent years; the full impact of oil-spills and climate change are still being discussed.
+The debate whether humanity puts too much pressure on the environment has only increased in recent years; the full impact of for example oil-spills and climate change are still being discussed.
 
 This project will focus on an environmental hazards that has recently become apparent: Plastic Soup.
 However, the project will not focus on how Plastic Soup affects nature, but how Artificial Intelligence can help to clean up the waste.
@@ -19,7 +19,7 @@ Large amounts of plastic waste end up in the world's oceans and have a significa
 Plastic Soup or Plastic Ocean are both collective nouns for this environmental problem.
 As \citeauthor{barnes2005drifting} indicate, the amount of flotsam in the oceans increases annually as does the increasing proportion of plastic.
 
-When people dispose plastic objects not in trash cans, but near rivers, wind and water flow ensure the objects float through rivers into the ocean.
+When plastic is not deposed of correctly, but dumped near rivers, wind and water flows ensure the objects float through rivers into the ocean.
 The currents in the oceans transport the flotsam around the oceans where it settles in patches.
 In figure \ref{fig:plastic-where} the estimated location of the Great Pacific Ocean Patch is shown.
 Plastic does not decay in nature, therefore a sizeable portion of marine life ingests the plastic after which it ends up in their digestive system. 
@@ -28,7 +28,7 @@ In addition to the dangers for marine life, large amounts of plastic end up on b
 This has a sizeable impact on local society and economy.
 
 \begin{figure}%[h!bt]
-  \centerline{
+  \centering
    \begin{minipage}{\widefigwidth}
  	\begin{center}
      \begin{subfigure}[t]{.65\textwidth}
@@ -37,7 +37,7 @@ This has a sizeable impact on local society and economy.
       \caption{Ocean currents in the Pacific that `collect' the Plastic Soup. Map by NOAA source: \url{http://education.nationalgeographic.com/education/encyclopedia/great-pacific-garbage-patch}}
       \label{fig:plastic-where}
      \end{subfigure}
-    \end{center}\\
+    \end{center}
    \begin{subfigure}[t]{.48\textwidth}
     \ifx\showfig\undefined
 	 \includegraphics[keepaspectratio=true,width=\textwidth]{images/Bird_with_plastic_stomach.jpg} \fi
@@ -54,22 +54,23 @@ This has a sizeable impact on local society and economy.
    \caption{Three images that show the impact of Plastic Soup on the environment and society.}% (a) shows where the sea-currents deposit the plastic. (b) shows how much plastic can end up in a bird. (c) shows a polluted beach in Mumbai, India.}
    \label{fig:plastic-impact}
    \end{minipage}
-  }
 \end{figure}
 
 The most significant problem is probably micro-plastic.
 When plastic floats in water for some time, sunlight and minerals break the plastic objects down into grains.
 These grains of plastic are usually only several micro meters in size and can infect the ecosystem to a large extend \citep{moore2011plastic}.
-The full impact of micro-plastic is still unknown, however these plastic grains can end up in bloodstreams of animals and even humans and clog their arteries.
+The full impact of micro-plastic is still unknown, however these plastic grains can end up in bloodstreams of animals and even humans and poison the host \citep{von2012uptake}.
 
-To recapitulate, Plastic Soup can influence the environment to a large extend.
-The oceans become polluted with plastic and it kills marine life. Above that society is also influenced and it is even possible that humans die from ingesting micro-plastic.
+To recapitulate, Plastic Soup can influence the environment to a large extent.
+The oceans become polluted with plastic and it kills marine life. Moreover, society is also influenced and it is even possible that humans die from ingesting micro-plastic.
 
-The pressure of Plastic Soup on the environment has caused several organisations to form in order to address this problem and find solutions for the problem.
-The nascency of organisations addressing this problem and searching for solutions have gained media attention and thus cause the growing awareness for the Plastic Soup.
+The pressure of Plastic Soup on the environment has caused several organisations to form in order to address this problem and find possible solutions for the problem.
+These solutions range from reducing the dumping of plastic and cleaning up the waste already in the oceans.
+The nascency of organisations addressing this problem and searching for solutions have gained media attention and thus contribute to the growing awareness for the Plastic Soup.
 These organisations would benefit of systems that can detect plastic automatically.
 Therefore, this project will focus on techniques that are able to distinguish plastic from marine life in ocean water.
-The goal of this project is to develop a system based on state-of-the-art techniques that is able to distinguish plastic from animals in images.
+The goal of this project is to develop a system based on state-of-the-art techniques that is able to distinguish plastic and animals in images.
+The reason to detect plastic is obvious, moreover because an automated system that could clean up the ocean should not interfere with local marine life, this project also focusses on detecting animals.
 
 \subsection{Project outline}
 \label{sec:Intro-Me}
@@ -82,8 +83,8 @@ A dataset of annotated images will be constructed to be used in this project.
 This dataset can be used to train and test the build system.
 To recognise the images containing plastic, a Convolutional Neural Network (CNN) will be used.
 The CNN will not be trained on the data itself but a pre-trained network will be used to construct a feature-vector of the image.
-These feature-vectors will be used to train a classifier to classify the images in either containing plastic or not containing plastic.
-The classifier used in this project is a Support Vector Machine (SVM); to distinguish between plastic and marine-life, two SMVs will be trained.
+These feature-vectors will be used to train a classifier to classify the images in either containing plastic or not containing plastic, or either containing animals or not containing animals.
+The classifier chosen for this project is a Support Vector Machine (SVM); to distinguish between plastic and marine-life, two SMVs will be trained.
 
 Both CNNs and SVMs are known to reach high accuracy in Computer Vision, therefore it is hypothesised that this method for plastic recognition should give an appropriate baseline.
 
@@ -93,8 +94,8 @@ As a prove of concept, the pipeline of the plastic recognition will be adapted a
 
 \subsection{Outline of the thesis chapters}
 \label{sec:Intro-Outline}
-The performance of the plastic-soup detector created in this project are described in section \ref{sec:Conclusion} with the tables of the results located in section \ref{sec:Results}.
-In section \ref{sec:Method} the method of the project is described, section \ref{sec:Data} shows how the data used in this project was acquired, and in section \ref{sec:Discussion} I will go into the parts that can be improved in further research.
+The data that was acquired for this projects is discussed in section \ref{sec:Data}. In section \ref{sec:Method} the method of the project is described and the performance of the plastic-soup detector created in this project is described in section \ref{sec:Results}.
+In section \ref{sec:Discussion} I will discuss the parts that could be improved in further research and conclude from the results.
 But first, in section \ref{sec:Theory} the current state-of-the-art techniques in the field of Computer Vision will be discussed.
 %In section \ref{sec:Theory}... \todo{when the thesis is finished, fill this paragraph}
 

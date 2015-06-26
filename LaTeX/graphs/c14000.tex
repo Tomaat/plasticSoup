@@ -7,15 +7,7 @@
     height=\mgraphheight,
     ymin=0, ymax=30000,
     %xmin=0,xmax=21,
-	xtick={0,...,21},
-	xticklabels={
-		%linear,poly:d=2,poly:d=3,poly:d=4,poly:d=5,poly:d=6,poly:d=7,poly:d=8,poly:d=9,rbf:$\gamma$=0.0,rbf:$\gamma$=0.1,rbf:$\gamma$=0.2,rbf:$\gamma$=0.3,rbf:$\gamma$=0.4,rbf:$\gamma$=0.5,rbf:$\gamma$=0.6,rbf:$\gamma$=0.7,rbf:$\gamma$=0.8,rbf:$\gamma$=0.9,rbf:$\gamma$=1.0,
-        linear,$\,$,d=2,d=3,d=4,d=5,d=6,d=7,d=8,d=9,$\,$,
-        $\gamma$=0.0,$\gamma$=0.1,$\gamma$=0.2,$\gamma$=0.3,$\gamma$=0.4,$\gamma$=0.5,$\gamma$=0.6,
-        $\gamma$=0.7,$\gamma$=0.8,$\gamma$=0.9,$\gamma$=1.0,
-	},
-	x tick label style={rotate=30, anchor=north east, inner sep=0mm},
-	xlabel={\hspace{1cm}${\underbrace{\text{\hspace{5cm}}}\atop\text{polynomial}}$\hspace{0.4cm}${\underbrace{\text{\hspace{7cm}}}\atop\text{rbf}}$},
+	x tick label style={color=white},
 	xlabel style={at={(0.5,-0.03)}},
 	ylabel=Time (sec),
 	axis y line*=right,
@@ -40,7 +32,13 @@
     height=\mgraphheight,
     ymin=0,ymax=1,
    % xmin=0,xmax=21,
-    x tick label style={color=white},
+    xtick={0,...,21},
+	xticklabels={
+		%linear,poly:d=2,poly:d=3,poly:d=4,poly:d=5,poly:d=6,poly:d=7,poly:d=8,poly:d=9,rbf:$\gamma$=0.0,rbf:$\gamma$=0.1,rbf:$\gamma$=0.2,rbf:$\gamma$=0.3,rbf:$\gamma$=0.4,rbf:$\gamma$=0.5,rbf:$\gamma$=0.6,rbf:$\gamma$=0.7,rbf:$\gamma$=0.8,rbf:$\gamma$=0.9,rbf:$\gamma$=1.0,
+        linear,$\,$,2,3,4,5,6,7,8,9,$\,$,0.0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1.0,
+	},
+	x tick label style={font=\scriptsize},%rotate=30, anchor=north east, inner sep=0mm},
+	xlabel={\hspace{1cm}${\underbrace{\text{\hspace{3.5cm}}}\atop\text{polynomial (d)}}$\hspace{0.6cm}${\underbrace{\text{\hspace{5cm}}}\atop\text{rbf (}\gamma\text{)}}$},
 	ylabel={Accuracy ($\frac{correct}{total}$)},
 	axis y line*=left,
 	enlargelimits=0.05,
@@ -63,5 +61,6 @@
     (21,0.553) (22,-10)
     };
 \end{axis}
+\node [black] (trainsize) at (1.0,3.0) {\it train-size=14.000};
 \end{tikzpicture}
 }

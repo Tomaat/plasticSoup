@@ -23,6 +23,7 @@
 \citation{barnes2005drifting}
 \citation{barnes2005drifting}
 \citation{moore2011plastic}
+\citation{von2012uptake}
 \@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{3}{section.1}}
 \newlabel{sec:Introduction}{{1}{3}{Introduction}{section.1}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {1.1}Plastic Soup: An environmental problem}{3}{subsection.1.1}}
@@ -47,10 +48,10 @@
 \citation{csurka2004visual}
 \citation{girshick2014rich}
 \citation{razavian2014cnn}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.2}{\ignorespaces The memo Seymote Papert distributed in the summer of 1966 for his Image Recognition project. source: \citet  {mensink12phd}\relax }}{6}{figure.caption.3}}
-\newlabel{fig:mit-note}{{2.2}{6}{The memo Seymote Papert distributed in the summer of 1966 for his Image Recognition project. source: \citet {mensink12phd}\relax }{figure.caption.3}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {2}Theoretical framework}{6}{section.2}}
 \newlabel{sec:Theory}{{2}{6}{Theoretical framework}{section.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.2}{\ignorespaces The memo Seymote Papert distributed in the summer of 1966 for his Image Recognition project. source: \citet  {mensink12phd}\relax }}{6}{figure.caption.3}}
+\newlabel{fig:mit-note}{{2.2}{6}{The memo Seymote Papert distributed in the summer of 1966 for his Image Recognition project. source: \citet {mensink12phd}\relax }{figure.caption.3}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Image representations}{6}{subsection.2.1}}
 \newlabel{sec:Theory-image}{{2.1}{6}{Image representations}{subsection.2.1}{}}
 \citation{fukushima1980neocognition}
@@ -62,47 +63,49 @@
 \@writefile{lof}{\contentsline {figure}{\numberline {2.3}{\ignorespaces Model of the layers of neurons in the CNN as used by \citet  {krizhevsky2012imagenet}\relax }}{7}{figure.caption.4}}
 \newlabel{fig:cnn-alex}{{2.3}{7}{Model of the layers of neurons in the CNN as used by \citet {krizhevsky2012imagenet}\relax }{figure.caption.4}{}}
 \citation{boser1992training}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.4}{\ignorespaces Example of possible possible classifications in an algorithm. The dotted lines are a worse fit than the continuous one.\relax }}{8}{figure.caption.5}}
-\newlabel{fig:svm-fits}{{2.4}{8}{Example of possible possible classifications in an algorithm. The dotted lines are a worse fit than the continuous one.\relax }{figure.caption.5}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Image classification}{8}{subsection.2.2}}
 \newlabel{sec:Theory-class}{{2.2}{8}{Image classification}{subsection.2.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.4}{\ignorespaces Example of possible possible classifications in an algorithm. The dotted lines are a worse fit than the continuous one.\relax }}{9}{figure.caption.5}}
+\newlabel{fig:svm-fits}{{2.4}{9}{Example of possible possible classifications in an algorithm. The dotted lines are a worse fit than the continuous one.\relax }{figure.caption.5}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {2.5}{\ignorespaces Examples of different hyperplanes of a two dimensional SVM fitted on data that need the respective hyperplane for a acceptable fit.\relax }}{9}{figure.caption.6}}
 \newlabel{fig:svm-planes}{{2.5}{9}{Examples of different hyperplanes of a two dimensional SVM fitted on data that need the respective hyperplane for a acceptable fit.\relax }{figure.caption.6}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3}Dataset of Plastic Soup images}{9}{section.3}}
-\newlabel{sec:Data}{{3}{9}{Dataset of Plastic Soup images}{section.3}{}}
-\citation{jia2014caffe}
-\citation{krizhevsky2012imagenet}
-\@writefile{toc}{\contentsline {section}{\numberline {4}Method}{10}{section.4}}
-\newlabel{sec:Method}{{4}{10}{Method}{section.4}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Pipeline}{10}{subsection.4.1}}
-\newlabel{sec:Method-pipeline}{{4.1}{10}{Pipeline}{subsection.4.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Dataset of Plastic Soup images}{10}{section.3}}
+\newlabel{sec:Data}{{3}{10}{Dataset of Plastic Soup images}{section.3}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {3.6}{\ignorespaces Several images from the dataset: Left images are from the above water viewpoint and right images are from below water. A red border indicates an image classified as showing plastic, where a green border indicates an image classified as showing animals.\relax }}{11}{figure.caption.7}}
 \newlabel{fig:datasetimages}{{3.6}{11}{Several images from the dataset: Left images are from the above water viewpoint and right images are from below water. A red border indicates an image classified as showing plastic, where a green border indicates an image classified as showing animals.\relax }{figure.caption.7}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.7}{\ignorespaces Schematics of pipeline used in this project. The image is classified using a CNN, the mean of the second-to-last layer is input for two SVMs which give the output whether detecting plastic or animals.\relax }}{12}{figure.caption.8}}
-\newlabel{fig:pipeline}{{4.7}{12}{Schematics of pipeline used in this project. The image is classified using a CNN, the mean of the second-to-last layer is input for two SVMs which give the output whether detecting plastic or animals.\relax }{figure.caption.8}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Impelemtation}{12}{subsection.4.2}}
-\newlabel{sec:Method-implementation}{{4.2}{12}{Impelemtation}{subsection.4.2}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Detecting the location of plastic}{12}{subsection.4.3}}
-\newlabel{sec:Method-location}{{4.3}{12}{Detecting the location of plastic}{subsection.4.3}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.8}{\ignorespaces Schematics of the second pipeline for localisation. The image is segmented into pieces. Each piece is pulled through the original pipeline, resulting in images with intensity according to the output of the SVM. All the pieces are added together at the pixel-location, which results in an image showing the confidence of the location of plastic or animals\relax }}{13}{figure.caption.9}}
-\newlabel{fig:locpip}{{4.8}{13}{Schematics of the second pipeline for localisation. The image is segmented into pieces. Each piece is pulled through the original pipeline, resulting in images with intensity according to the output of the SVM. All the pieces are added together at the pixel-location, which results in an image showing the confidence of the location of plastic or animals\relax }{figure.caption.9}{}}
+\citation{jia2014caffe}
+\citation{krizhevsky2012imagenet}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Method}{12}{section.4}}
+\newlabel{sec:Method}{{4}{12}{Method}{section.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Pipeline}{12}{subsection.4.1}}
+\newlabel{sec:Method-pipeline}{{4.1}{12}{Pipeline}{subsection.4.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Implementation}{12}{subsection.4.2}}
+\newlabel{sec:Method-implementation}{{4.2}{12}{Implementation}{subsection.4.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.7}{\ignorespaces Schematics of pipeline used in this project. The image is classified using a CNN, the mean of the second-to-last layer is input for two SVMs which give the output whether detecting plastic or animals.\relax }}{13}{figure.caption.8}}
+\newlabel{fig:pipeline}{{4.7}{13}{Schematics of pipeline used in this project. The image is classified using a CNN, the mean of the second-to-last layer is input for two SVMs which give the output whether detecting plastic or animals.\relax }{figure.caption.8}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Detecting the location of plastic}{13}{subsection.4.3}}
+\newlabel{sec:Method-location}{{4.3}{13}{Detecting the location of plastic}{subsection.4.3}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {5}Results}{13}{section.5}}
 \newlabel{sec:Results}{{5}{13}{Results}{section.5}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Pipeline}{13}{subsection.5.1}}
-\newlabel{sec:Results-SVM}{{5.1}{13}{Pipeline}{subsection.5.1}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Detecting the location of plastic}{14}{subsection.5.2}}
-\newlabel{sec:Results-location}{{5.2}{14}{Detecting the location of plastic}{subsection.5.2}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.9}{\ignorespaces Outcome of the different parameters of the SVM trained on different slices of train-data and tested on the validation-set. The linear kernel has one of the highest accuracies, while using the least time to train. Opposing to the trend of the RBF kernel\relax }}{15}{figure.caption.10}}
-\newlabel{fig:c14}{{5.9}{15}{Outcome of the different parameters of the SVM trained on different slices of train-data and tested on the validation-set. The linear kernel has one of the highest accuracies, while using the least time to train. Opposing to the trend of the RBF kernel\relax }{figure.caption.10}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.10}{\ignorespaces Graph of time and accuracy of a linear SVM on different sizes data of the under water viewpoint. The test-data consisted of 4123 images. Large datasets show a high accuracy, however even small amounts of data show satisfying results.\relax }}{16}{figure.caption.11}}
-\newlabel{fig:lin1}{{5.10}{16}{Graph of time and accuracy of a linear SVM on different sizes data of the under water viewpoint. The test-data consisted of 4123 images. Large datasets show a high accuracy, however even small amounts of data show satisfying results.\relax }{figure.caption.11}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.11}{\ignorespaces Graph of time and accuracy of a linear SVM on different sizes data of the under water viewpoint. The test-data consisted of 18583 images. The same trend as the graphs in figure \ref  {fig:lin1} is seen.\relax }}{16}{figure.caption.12}}
-\newlabel{fig:lin2}{{5.11}{16}{Graph of time and accuracy of a linear SVM on different sizes data of the under water viewpoint. The test-data consisted of 18583 images. The same trend as the graphs in figure \ref {fig:lin1} is seen.\relax }{figure.caption.12}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.8}{\ignorespaces Schematics of the second pipeline for localisation. The image is segmented into pieces. Each piece is pulled through the original pipeline, resulting in images with intensity according to the output of the SVM. All the pieces are added together at the pixel-location, which results in an image showing the confidence of the location of plastic or animals\relax }}{14}{figure.caption.9}}
+\newlabel{fig:locpip}{{4.8}{14}{Schematics of the second pipeline for localisation. The image is segmented into pieces. Each piece is pulled through the original pipeline, resulting in images with intensity according to the output of the SVM. All the pieces are added together at the pixel-location, which results in an image showing the confidence of the location of plastic or animals\relax }{figure.caption.9}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Pipeline}{14}{subsection.5.1}}
+\newlabel{sec:Results-SVM}{{5.1}{14}{Pipeline}{subsection.5.1}{}}
 \citation{moore2011plastic}
-\@writefile{toc}{\contentsline {section}{\numberline {6}Discussion}{17}{section.6}}
-\newlabel{sec:Discussion}{{6}{17}{Discussion}{section.6}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.12}{\ignorespaces Example of outcome of running an image through the segmented image pipeline. Green locates the animals and red the plastic\relax }}{18}{figure.caption.13}}
-\newlabel{fig:sub-matrix}{{5.12}{18}{Example of outcome of running an image through the segmented image pipeline. Green locates the animals and red the plastic\relax }{figure.caption.13}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Detecting the location of plastic}{15}{subsection.5.2}}
+\newlabel{sec:Results-location}{{5.2}{15}{Detecting the location of plastic}{subsection.5.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.9}{\ignorespaces Outcome of the different parameters of the SVM trained on different slices of train-data and tested on the validation-set. The linear kernel has one of the highest accuracies, while using the least time to train. Opposing to the trend of the RBF kernel\relax }}{16}{figure.caption.10}}
+\newlabel{fig:c14}{{5.9}{16}{Outcome of the different parameters of the SVM trained on different slices of train-data and tested on the validation-set. The linear kernel has one of the highest accuracies, while using the least time to train. Opposing to the trend of the RBF kernel\relax }{figure.caption.10}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.10}{\ignorespaces Graph of time and accuracy of a linear SVM on different sizes of data from the under water viewpoint. The test-data consisted of 4.123 images. Large datasets show a high accuracy, however even small amounts of data show satisfying results.\relax }}{17}{figure.caption.11}}
+\newlabel{fig:lin1}{{5.10}{17}{Graph of time and accuracy of a linear SVM on different sizes of data from the under water viewpoint. The test-data consisted of 4.123 images. Large datasets show a high accuracy, however even small amounts of data show satisfying results.\relax }{figure.caption.11}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.11}{\ignorespaces Graph of time and accuracy of a linear SVM on different sizes of data. The test set and train set came from the different datasets. The animal class does not gain high accuracy, the plastic class does.\relax }}{17}{figure.caption.12}}
+\newlabel{fig:lin3}{{5.11}{17}{Graph of time and accuracy of a linear SVM on different sizes of data. The test set and train set came from the different datasets. The animal class does not gain high accuracy, the plastic class does.\relax }{figure.caption.12}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.12}{\ignorespaces Graph of time and accuracy of a linear SVM on different sizes of data from a set of mixed images of the above and below water viewpoint. The test-data consisted of 18.583 images. The same trend as the graphs in figure \ref  {fig:lin1} is seen.\relax }}{18}{figure.caption.13}}
+\newlabel{fig:lin2}{{5.12}{18}{Graph of time and accuracy of a linear SVM on different sizes of data from a set of mixed images of the above and below water viewpoint. The test-data consisted of 18.583 images. The same trend as the graphs in figure \ref {fig:lin1} is seen.\relax }{figure.caption.13}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Discussion}{18}{section.6}}
+\newlabel{sec:Discussion}{{6}{18}{Discussion}{section.6}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.13}{\ignorespaces Example of outcome of running an image through the segmented image pipeline. Green locates the animals and red the plastic\relax }}{19}{figure.caption.14}}
+\newlabel{fig:sub-matrix}{{5.13}{19}{Example of outcome of running an image through the segmented image pipeline. Green locates the animals and red the plastic\relax }{figure.caption.14}{}}
 \citation{BingObj2014}
 \bibstyle{abbrvnat}
 \bibdata{Tex_sources/bib}
@@ -118,25 +121,83 @@
 \bibcite{moore2011plastic}{{10}{2011}{{Moore and Phillips}}{{}}}
 \bibcite{razavian2014cnn}{{11}{2014}{{Razavian et~al.}}{{Razavian, Azizpour, Sullivan, and Carlsson}}}
 \bibcite{szeliski2010computer}{{12}{2010}{{Szeliski}}{{}}}
-\bibcite{zeiler2014visualizing}{{13}{2014}{{Zeiler and Fergus}}{{}}}
+\bibcite{von2012uptake}{{13}{2012}{{von Moos et~al.}}{{von Moos, Burkhardt-Holm, and Ko\"ohler}}}
+\bibcite{zeiler2014visualizing}{{14}{2014}{{Zeiler and Fergus}}{{}}}
 \@writefile{toc}{\global \c@tocdepth 2\relax }
-\@writefile{toc}{\contentsline {section}{\numberline {A}\texttt  {Python} code of the project}{23}{appendix.A}}
-\newlabel{sec:ap-code}{{A}{23}{\texttt {Python} code of the project}{appendix.A}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {B}Output of \texttt  {Python} code}{23}{appendix.B}}
-\newlabel{sec:ap-out}{{B}{23}{Output of \texttt {Python} code}{appendix.B}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {B.i}SVM}{23}{subsection.B.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {A}\texttt  {Python} code of the project}{24}{appendix.A}}
+\newlabel{sec:ap-code}{{A}{24}{\texttt {Python} code of the project}{appendix.A}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {B}Output of \texttt  {Python} code}{24}{appendix.B}}
+\newlabel{sec:ap-out}{{B}{24}{Output of \texttt {Python} code}{appendix.B}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {B.i}SVM}{24}{subsection.B.1}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {B.i--1}Train and validate below water}{24}{subsubsection.B.1.1}}
 \gdef \LT@i {\LT@entry 
     {1}{55.63904pt}\LT@entry 
     {4}{44.7779pt}\LT@entry 
     {4}{39.77788pt}\LT@entry 
     {4}{37.00009pt}\LT@entry 
-    {5}{37.00009pt}\LT@entry 
-    {5}{37.00009pt}\LT@entry 
+    {1}{35.11115pt}\LT@entry 
     {1}{32.00008pt}\LT@entry 
-    {5}{32.00008pt}\LT@entry 
-    {5}{32.00008pt}\LT@entry 
+    {1}{32.00008pt}\LT@entry 
+    {1}{28.94449pt}\LT@entry 
+    {1}{27.13896pt}\LT@entry 
     {1}{34.77786pt}\LT@entry 
     {1}{34.77786pt}\LT@entry 
     {1}{34.77786pt}}
-\xwm@secstopagerange{{1}{3},{1}{3},{1}{5},{1}{5},{2}{5},{2}{6},{2}{8},{3}{9},{4}{10},{4}{10},{4}{12},{4}{12},{5}{13},{5}{13},{5}{14},{6}{17},{A}{23},{B}{23},{B}{23},{10000}{25}}
-\newlabel{xwmlastpage}{{6}{25}{Discussion\relax }{table.1}{}}
+\gdef \LT@ii {\LT@entry 
+    {1}{52.0279pt}\LT@entry 
+    {1}{40.36119pt}\LT@entry 
+    {1}{35.38893pt}\LT@entry 
+    {1}{37.00009pt}\LT@entry 
+    {1}{35.11115pt}\LT@entry 
+    {1}{32.00008pt}\LT@entry 
+    {1}{28.25005pt}\LT@entry 
+    {1}{28.94449pt}\LT@entry 
+    {1}{27.13896pt}\LT@entry 
+    {1}{34.77786pt}\LT@entry 
+    {1}{34.77786pt}\LT@entry 
+    {1}{34.77786pt}}
+\gdef \LT@iii {\LT@entry 
+    {1}{52.0279pt}\LT@entry 
+    {1}{40.36119pt}\LT@entry 
+    {1}{35.38893pt}\LT@entry 
+    {1}{37.00009pt}\LT@entry 
+    {1}{35.11115pt}\LT@entry 
+    {1}{32.00008pt}\LT@entry 
+    {1}{32.00008pt}\LT@entry 
+    {1}{28.94449pt}\LT@entry 
+    {1}{27.13896pt}\LT@entry 
+    {1}{34.77786pt}\LT@entry 
+    {1}{34.77786pt}\LT@entry 
+    {1}{34.77786pt}}
+\gdef \LT@iv {\LT@entry 
+    {1}{52.0279pt}\LT@entry 
+    {1}{40.36119pt}\LT@entry 
+    {1}{35.38893pt}\LT@entry 
+    {1}{37.00009pt}\LT@entry 
+    {1}{35.11115pt}\LT@entry 
+    {1}{32.00008pt}\LT@entry 
+    {1}{32.00008pt}\LT@entry 
+    {1}{28.94449pt}\LT@entry 
+    {1}{32.00008pt}\LT@entry 
+    {1}{34.77786pt}\LT@entry 
+    {1}{34.77786pt}\LT@entry 
+    {1}{34.77786pt}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {B.i--2}Train and test below water}{26}{subsubsection.B.1.2}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {B.i--3}Train on below water, test on above water}{26}{subsubsection.B.1.3}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {B.i--4}Train on above water, test on below water}{26}{subsubsection.B.1.4}}
+\gdef \LT@v {\LT@entry 
+    {1}{52.0279pt}\LT@entry 
+    {1}{40.36119pt}\LT@entry 
+    {1}{35.38893pt}\LT@entry 
+    {1}{37.00009pt}\LT@entry 
+    {1}{37.00009pt}\LT@entry 
+    {1}{37.00009pt}\LT@entry 
+    {1}{32.00008pt}\LT@entry 
+    {1}{32.00008pt}\LT@entry 
+    {1}{32.00008pt}\LT@entry 
+    {1}{34.77786pt}\LT@entry 
+    {1}{34.77786pt}\LT@entry 
+    {1}{34.77786pt}}
+\xwm@secstopagerange{{1}{3},{1}{3},{1}{5},{1}{5},{2}{5},{2}{6},{2}{8},{3}{10},{4}{12},{4}{12},{4}{12},{4}{13},{5}{13},{5}{13},{5}{15},{6}{15},{A}{24},{B}{24},{B}{24},{B}{24},{B}{26},{B}{26},{B}{26},{B}{27},{10000}{27}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {B.i--5}Train and test mixed dataset}{27}{subsubsection.B.1.5}}
+\newlabel{xwmlastpage}{{6}{27}{Discussion\relax }{table.5}{}}

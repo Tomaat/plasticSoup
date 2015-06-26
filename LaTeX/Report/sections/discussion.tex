@@ -6,28 +6,36 @@
 This project tried to contribute on solving the Plastic Soup problem.
 The amount of floating plastic in the world's oceans could be very dangerous to the environment and society \citep{moore2011plastic}.
 Automating the process could help with the clean-up and therefore a system that could detect plastic was constructed in this project.
-For this purpose a dataset was build, on which a Convolutional Neural Network was used for feature extraction.
+For this purpose a dataset was build, on which a CNN was used for feature extraction.
 On these features a SVM classifier was trained and tested against the labels of the dataset.
 
 %==conclusie
 %\paragraph{}
-As shown in section \ref{sec:Results}, the best kernel for an SVM in this dataset is a linear hyperplane. This kernel had a high accuracy, even while trained on small amounts of data, while not using much time to train or test.
-The test of figure \ref{fig:lin1} shows an accuracy on plastic and animal detection of less than 1\permil.
+As shown in section \ref{sec:Results}, the best kernel for an SVM in this dataset is a linear hyperplane. This kernel had a high accuracy, even while being trained on small amounts of data, while not using much time to train or test.
+The test of figure \ref{fig:lin1} shows an accuracy on plastic and animal detection with an error of less than 1\permil.
 Therefore it can be concluded that this method, using the second-to-last layer of a pre-trained Convolutional Neural Network on an SVM, makes it possible to detect Plastic Soup in images.
 
 A precise conclusion from the localisation experiment is difficult to draw.
 The conducted test shows some results: several of the images show a higher confidence on locations where the concentration of plastic is higher.
 However, this is not always the case; especially with the location of marine-life.
-More tests should be conducted with this technique, with possibly more annotated data, before a conclusion can be made.
+The current localisation pipeline does not work satisfactory, more tests should be conducted with this technique, with possibly more annotated data, to achieve better results.
 
 %===interpretatie conclusie
 %\paragraph{}
-The accurate results of the Support Vector Machine were be expected.
+The accurate results of the SVM were be expected.
 SVMs are known to work well in high dimensional data, as long as the amount of classes to be trained on is small.
-The 4096 vector of the second-to-last layer of the CNN needed to be trained on two classes; each class had it's own SVM trained on either showing the class or not.
-However, because the model was trained on 70\% the images in the dataset, which consists mostly of consecutive frames of short film clips, there is a substantial amount of overfitting possible.
+The $4.096$ dimensional vector of the second-to-last layer of the CNN needed to be trained on two classes; each class had its own SVM trained on either showing the class or not.
+However, because the model was trained on 70\% the images in the dataset, which consisted mostly of consecutive frames of short film clips, there is a substantial amount of overfitting possible.
+\ifx\showmixi\undefined
+Nevertheless, as the test of figure \ref{fig:lin3} shows, the pipeline shows a satisfactory accuracy when trained on the other viewpoint than tested and therefore refute a high accuracy solely based on over-fitting.
+The low accuracy of the animal-class can be explained because the system is trained on fish and tested on birds, or vice versa.
+Therefore a test is done on a mixed set of both viewpoints, which results are shown in figure \ref{fig:lin2}.
+The usage of both the above water and below water viewpoints from the dataset in a single test, increases the amount of variance between the images.
+The results show the same trend as before: gaining a high accuracy, even even trained on a small part of the dataset.
+\else
 Nevertheless, as the test of figure \ref{fig:lin2} shows, a high accuracy can also be obtained with a small amount of train-data, and a large test-set.
 The test in this figure used both the above water and below water viewpoints from the dataset in a single test, increasing the amount of variance between the images.
+\fi
 In this case overfitting when half the dataset is used is also probable, nevertheless, the model also shows accuracy of more than 90\% when trained on merely a small part of the train-set.
 
 The localisation experiments however had less satisfying results.
@@ -49,7 +57,7 @@ Furthermore, the classes that were trained on were not fairly distributed in the
 An improved dataset containing more variance of images and fairer distributed classes, could be used to improve the results of this project.
 This dataset should also contain labels on parts of the images, which could improve the training and testing of the localisation of plastic within images.
 
-This project did not research the usage of different Convolutional Neural Networks.
+This project did not research the usage of different CNNs.
 A standard CNN was used to construct the feature-vector; no time was spent on researching if other networks would perform better.
 Not only was assumed that the CNN worked properly and was therefore not further tested, also the parameters with which the SVM was tested were not statistical analysed; no cross-fold validation was conducted.
 Nevertheless, as the accuracy of the pipeline was close to 100\%, no more time was taken to research these parameters than necessary.
@@ -62,11 +70,11 @@ The results show nonetheless how this pipeline could be used to detect Plastic S
 This project showed that a pre-trained CNN in combination with a linear SVM could detect images containing either of two classes.
 Further research in this domain could try to improve the system made in this project.
 An improved dataset with more distributed classes and less similarity between the images in combination with training the data on more than one scale, could increase the performance on localisation of plastic within an image.
-Projects that do this, should also keep in mind that cross-validation on the hyper-parameters could 
+Projects using this method, should also keep in mind that cross-validation on the hyper-parameters could improve the results if they are not satisfactory.
 
 An other example to improve the localisation of the plastic within the images, are the use of other algorithms.
 If more complex algorithms are used for object detection in the image, the blobs resulting from these algorithms could be input for the pipeline, instead of the now used segmentation-pyramid.
-One of the algorithms that could be used for this is BING \citep{BingObj2014}; this project did not have the time to implement one of these algorithms.
+One of the algorithms that could be used for this is BING \citep{BingObj2014}, however this project did not have the time to implement one of these algorithms.
 
 Before the system proposed in this project could be used for real-world applications, more research is needed.
 However, this project showed the possibility of using state-of-the-art Computer Vision techniques to detect Plastic Soup.

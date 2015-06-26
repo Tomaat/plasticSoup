@@ -78,13 +78,13 @@
 \def\ori{
 \resizebox{\elwi}{!}{
 \begin{tikzpicture}
-	\node [orpi] (p) at (0.0) {Original\\pipeline};
+	\node [orpi] (p) at (0,0) {Original\\pipeline};
 \end{tikzpicture}
 } }
 \def\red{
 \resizebox{\elwi}{!}{
 \begin{tikzpicture}
-	\node [pimage] (p) at (0.0) {Plastic};
+	\node [pimage] (p) at (0,0) {Plastic};
 \end{tikzpicture}
 } }
 \def\Rd{
@@ -123,7 +123,7 @@
 \def\gre{
 \resizebox{\elwi}{!}{
 \begin{tikzpicture}
-	\node [aimage] (p) at (0.0) {Animals};
+	\node [aimage] (p) at (0,0) {Animals};
 \end{tikzpicture}
 } }
 \def\Gd{
@@ -163,27 +163,27 @@
 \resizebox{\elwi}{!}{
 \includegraphics{images/segment/253_01__plastic__.png}
 %\begin{tikzpicture}
-%	\node [orpi] (p) at (0.0) {Original\\Pipeline};
+%	\node [orpi] (p) at (0,0) {Original\\Pipeline};
 %\end{tikzpicture}
 } }
 \def\Ani{
 \resizebox{\elwi}{!}{
 \includegraphics{images/segment/253_01__animals__.png}
 %\begin{tikzpicture}
-%	\node [orpi] (p) at (0.0) {Original\\Pipeline};
+%	\node [orpi] (p) at (0,0) {Original\\Pipeline};
 %\end{tikzpicture}
 } }
 \def\mdo{
 \resizebox{\elwi}{!}{
 \begin{tikzpicture}
-	\node [labm] (p) at (0.0) {...};
+	\node [labm] (p) at (0,0) {...};
 \end{tikzpicture}
 } }
 \centerline{
 \begin{minipage}{\widefigwidth}
 \resizebox{\textwidth}{!}{
 \xymatrix{
-\I \ar[r]^{devide} \ar[d]^{\times2^0}& \Id \ar[r]^{devide} \ar[d]^{\times2^1}& ... \ar[r]^{devide} \ar[d]& \Idd \ar[d]^{\times2^d}& \\
+\I \ar[r]^{divide} \ar[d]^{\times2^0}& \Id \ar[r]^{divide} \ar[d]^{\times2^1}& ... \ar[r]^{divide} \ar[d]& \Idd \ar[d]^{\times2^d}& \\
 \ori \ar[d]& \ori \ar[d]& \mdo \ar[d]& \ori \ar[d]& \\
 \red \ar[r]^{+}& \Rd \ar[r]^{+}& \mdo \ar[r]^{+}& \Rdd \ar[r]^{=}& \Pla\\
 \gre \ar[r]^{+}& \Gd \ar[r]^{+}& \mdo \ar[r]^{+}& \Gdd \ar[r]^{=}& \Ani\\

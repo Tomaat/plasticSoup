@@ -6,16 +6,21 @@
 \contentsline {section}{\numberline {2}Theoretical framework}{6}{section.2}
 \contentsline {subsection}{\numberline {2.1}Image representations}{6}{subsection.2.1}
 \contentsline {subsection}{\numberline {2.2}Image classification}{8}{subsection.2.2}
-\contentsline {section}{\numberline {3}Dataset of Plastic Soup images}{9}{section.3}
-\contentsline {section}{\numberline {4}Method}{10}{section.4}
-\contentsline {subsection}{\numberline {4.1}Pipeline}{10}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Impelemtation}{12}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Detecting the location of plastic}{12}{subsection.4.3}
+\contentsline {section}{\numberline {3}Dataset of Plastic Soup images}{10}{section.3}
+\contentsline {section}{\numberline {4}Method}{12}{section.4}
+\contentsline {subsection}{\numberline {4.1}Pipeline}{12}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Implementation}{12}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Detecting the location of plastic}{13}{subsection.4.3}
 \contentsline {section}{\numberline {5}Results}{13}{section.5}
-\contentsline {subsection}{\numberline {5.1}Pipeline}{13}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}Detecting the location of plastic}{14}{subsection.5.2}
-\contentsline {section}{\numberline {6}Discussion}{17}{section.6}
+\contentsline {subsection}{\numberline {5.1}Pipeline}{14}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Detecting the location of plastic}{15}{subsection.5.2}
+\contentsline {section}{\numberline {6}Discussion}{18}{section.6}
 \global \c@tocdepth 2\relax 
-\contentsline {section}{\numberline {A}\texttt {Python} code of the project}{23}{appendix.A}
-\contentsline {section}{\numberline {B}Output of \texttt {Python} code}{23}{appendix.B}
-\contentsline {subsection}{\numberline {B.i}SVM}{23}{subsection.B.1}
+\contentsline {section}{\numberline {A}\texttt {Python} code of the project}{24}{appendix.A}
+\contentsline {section}{\numberline {B}Output of \texttt {Python} code}{24}{appendix.B}
+\contentsline {subsection}{\numberline {B.i}SVM}{24}{subsection.B.1}
+\contentsline {subsubsection}{\numberline {B.i--1}Train and validate below water}{24}{subsubsection.B.1.1}
+\contentsline {subsubsection}{\numberline {B.i--2}Train and test below water}{26}{subsubsection.B.1.2}
+\contentsline {subsubsection}{\numberline {B.i--3}Train on below water, test on above water}{26}{subsubsection.B.1.3}
+\contentsline {subsubsection}{\numberline {B.i--4}Train on above water, test on below water}{26}{subsubsection.B.1.4}
+\contentsline {subsubsection}{\numberline {B.i--5}Train and test mixed dataset}{27}{subsubsection.B.1.5}

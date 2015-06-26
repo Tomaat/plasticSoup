@@ -4,9 +4,9 @@
 
 \clearpage
 
-\begin{appendix}
+\begin{appendix}{\small
 \renewcommand{\thesubsection}{\thesection.\roman{subsection}}
-\renewcommand{\thesubsubsection}{\thesubsection - \arabic{subsubsection}}
+\renewcommand{\thesubsubsection}{\thesubsection--\arabic{subsubsection}}
 \addtocontents{toc}{\setcounter{tocdepth}{2}}
 
 \section{\texttt{Python} code of the project}
@@ -38,10 +38,7 @@ Bac & the accuracy on both classes i.e. $\frac{Bco}{Vsize}$ \\
 Pac & the accuracy on the plastic class i.e. $\frac{Bco+Pco}{Vsize}$ \\
 Aac & the accuracy on the animals class i.e. $\frac{Bco+Aco}{Vsize}$
 \end{tabular}
-{\small
-\begin{longtable}{r|r|r|r|r|r|r|r|r|r|r|r}
 \input{Tex_sources/data/svmouttotal.tex}
-\end{longtable}
-}
 \fi
-\end{appendix}
+
+}\end{appendix}

@@ -7,12 +7,12 @@
 Image Recognition was originally created to be a summer school of MIT.
 In 1966 Seymour Papert asked his students over the course of a few months to develop a system that could recognise objects.
 As was the case in that age, Artificial Intelligence made some wild assumptions on the reachability of their projects \citep{szeliski2010computer}.
-The recent developments show how mistaken they were.
+The recent developments show how mistaken they were, because it took years of study before recent systems arose with accurate vision.
 Figure \ref{fig:mit-note} shows a copy of the original memo Seymour wrote to his students.
 
-\begin{figure}%[h!bt]
+\begin{figure}[h!bt]
 \centering
-\ifx\showfix\undefined
+\ifx\showfig\undefined
 \includegraphics[keepaspectratio=true,width=.7\textwidth]{images/MITnote.png}\fi
 \captionsetup{width=.7\textwidth}
 \caption{The memo Seymote Papert distributed in the summer of 1966 for his Image Recognition project. source: \citet{mensink12phd}}
@@ -22,8 +22,8 @@ Figure \ref{fig:mit-note} shows a copy of the original memo Seymour wrote to his
 Through the years, multiple algorithms were created to accomplice Computer Vision.
 The model used to describe images has been a grid with a value (the pixels).
 This results in a multidimensional function, on which several linear and geometric algebra algorithms can be used.
-Usually three steps are taken to identify an image.
-Firstly using the gradient in images, key-points of the image are identified.
+Usually three steps are taken to identify this model of an image.
+Firstly using the gradient in images, key-point of the image are identified.
 Thereafter, these key-points are used to construct features or models, describing the image.
 Finally these models are tested against a classifier \citep{szeliski2010computer}.
 
@@ -33,18 +33,18 @@ Finally these models are tested against a classifier \citep{szeliski2010computer
 \subsection{Image representations}
 \label{sec:Theory-image}
 As stated above, local image gradients are used to make models on which classifiers can be trained.
-Several techniques exists that extract features from the image and make a descriptor.
-A wildly used technique for extracting the features is a `Bag of Visual Words'; the frequency of the features result in a multidimensional vector of the size of the number of features \citep{csurka2004visual}.
+Several techniques exist that extract features from the image and make a descriptor.
+A widely used technique for extracting features is a `Bag of Visual Words'; the frequency of the features result in a multidimensional vector of the size of the number of features \citep{csurka2004visual}.
 From the data-points representing the images, a classifier can be trained.
 
 Another possibility is using a Convolutional Neural Network (CNN).
 The CNN does a similar trick with the features as described above.
 However, it also constructs the features itself from the image-data and has the possibility to be used as a classifier.
 In other words, a CNN can be used for each of the steps needed for classifying images.
-The CNN technique is currently popular with image recognition tasks.
-From large amounts of data, an accurate recognition system can be trained \citep{girshick2014rich}, \citep{razavian2014cnn}.
+The CNN technique is currently popular with image recognition tasks because
+using large amounts of data, an accurate recognition system can be trained \citep{girshick2014rich}, \citep{razavian2014cnn}.
 
-The biggest difference between `classical' imaging techniques --such as Bag of Visual Words-- and Convolutional Neural Networks is the fact that a CNN is self-learning.
+The biggest difference between `classical' imaging techniques -- such as Bag of Visual Words -- and Convolutional Neural Networks is the fact that a CNN is self-learning.
 The neurons of a CNN are trained on the data and construct their own representation that describes the images, contrary to classical techniques, from which the representations are constructed by humans that build the algorithms.
 
 %\todo{structuur: -image representations(bow, cnn). -image classification (svm=meest voorkomend)}
@@ -63,14 +63,14 @@ The neurons of a CNN are trained on the data and construct their own representat
 
 In Machine Learning, the CNN has existed for quite some time \citep{fukushima1980neocognition}.
 However, due to computational complexity is was only recently that \citet{krizhevsky2012imagenet} showed an implementation to compute large CNNs;
-their piece of research shows how to implement a CNN on a computer's GPU that can work with the massive parallelism necessary to compute many layers of nodes.
+their study shows how to implement a CNN on a computer's GPU that can work with the massive parallelism necessary to compute many layers of nodes.
 
 Neural Networks consist of nodes, connected with weighted edges.
 When data is presented to the input of the network, each node calculates with its input an output, which results in an output of the network.
 When the output of the network is incorrect according to the label of the input, a backward calculation in the network is performed.
-This calculation makes an adaptation to the weights in such a manner, that the network will output the correct label in the next run.
+This calculation makes an adaptation to the weights in such a manner that the network will output the correct label in the next run.
 A CNN is a neural network that consists of several layers of nodes, with sometimes totalling many millions of neurons.
-Figure \ref{fig:cnn-alex} shows the layers of neurons the CNN used by \citeauthor{krizhevsky2012imagenet}.
+Figure \ref{fig:cnn-alex} shows the layers of neurons the CNN used by \citet{krizhevsky2012imagenet}.
 
 \begin{figure}%[h!tb]
 \centering
@@ -82,7 +82,7 @@ Figure \ref{fig:cnn-alex} shows the layers of neurons the CNN used by \citeautho
 
 Though a CNN can be used to classify a dataset of images, training such a network uses much computing power.
 A pre-trained CNN has the weights of the neurons adapted to the dataset used for training.
-However, because a pre-trained CNN is trained on the classes of the original dataset, the resulting network is not trained on the classes used in this project.
+However, because a pre-trained CNN is trained on the classes of the original dataset, the resulting network is not specifically trained on the classes used in this project.
 Nevertheless, a method that can be applied to work around this problem is inherent to the workings of a CNN.
 %The dataset in this project is small with only 40k images.
 %Therefore training a CNN will not be possible.
@@ -101,13 +101,13 @@ Effectively, this project uses the second-to-last layer of a pre-trained CNN as 
 %\todo{Write this section (or delete it)}
 \subsection{Image classification}
 \label{sec:Theory-class}
-To classify a feature-vectors, several possible algorithms exist.
-The Support Vector Machine (SVM) is one of the classification algorithms in Machine Learning that is widely used in supervised image classification.
+To classify a feature-vector, several possible algorithms exist.
+The Support Vector Machine (SVM) is one of the classification algorithms in Machine Learning which is widely used in supervised image classification.
 %In contrary to k-means cluster algorithm, an SVM uses labelled data to classify \citepos.
 %An SVM also works better in high-dimensional data than a k-means clustering \citeneed.
 %However, an SVM works best when no more than two classes need to be classified.
 The SVM uses the data-points as vectors in a high dimensional space \citep{boser1992training}.
-In this space, several Linear Algebra techniques are used to fit a hyperplane in this space, where the distance (i.e. a projection of the vector on the plane) of each data-point is maximised.
+In this space, several Linear- and Geometric Algebra techniques are used to fit a hyperplane in this space, where the distance (i.e. a projection of the vector on the plane) of each data-point is maximised.
 Figure \ref{fig:svm-fits} shows an example in 2D of possible manners to divide the data-points in the classes; the solid line shows a maximised classifier while the dotted lines are examples of a possible worse fit.
 The SVM results in a classifier where the sign of the projection vector classifies the data-points (i.e. on which side of the plane the data-point is).
 
@@ -115,12 +115,12 @@ The SVM results in a classifier where the sign of the projection vector classifi
 \centering
 \ifx\showfig\undefined
 \input{graphs/svmT.tex} \fi
-\captionsetup{width=.8\textwidth}
+\captionsetup{width=.7\textwidth}
 \caption{Example of possible possible classifications in an algorithm. The dotted lines are a worse fit than the continuous one.}
 \label{fig:svm-fits}
 \end{figure}
 
-The hyperplane that describes the classifier can be described by, besides linear, other, more complex, formulae.
+The hyperplane that describes the classifier can be described by, besides linear, other more complex, formulae.
 These other hyperplanes are sometimes needed to construct a classifier that fits the data. Figure \ref{fig:svm-planes} shows the three hyperplanes used in this project.
 The data in these examples show the necessity of the different hyperplanes for different data.
 However, these more complex planes usually need more calculation time than a linear plane.

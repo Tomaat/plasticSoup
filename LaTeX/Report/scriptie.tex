@@ -2,7 +2,7 @@
 \input{Tex_sources/meta.tex}
 \newsavebox\mybox
 \savebox\mybox{\tikz[color=red,opacity=0.1]\node{DRAFT};}
-\newwatermark*[allpages,angle=45,scale=10,xpos=-20,ypos=15]{\usebox\mybox}
+%\newwatermark*[allpages,angle=45,scale=10,xpos=-20,ypos=15]{\usebox\mybox}
 \title{Detecting Plastic Soup automatically}
 \author{Student:\\Ysbrand Galama \\ Stud.ID: 10262067 \and Supervisor:\\ Thomas Mensink }
 \date{\today}
@@ -29,7 +29,8 @@
 %\def\showfig{1} %-- comment to show figures
 %\def\showapp{1} %-- comment to show appendix
 %\def\showintro{1} %-- comment to show titlepage
-\def\showpbreak{1} %-- comment to flush pages
+%\def\showpbreak{1} %-- comment to flush pages
+%\def\showmixi{1} %-- comment to show train-test above-below
 %\pagenumbering{gobble}
 
 \ifx\showintro\undefined
@@ -42,7 +43,9 @@ Large amounts of plastic end up in the world's oceans.
 This project uses state-of-the-art Computer Vision techniques to detect Plastic Soup.
 Recent studies have shown that Convolutional Neural Networks (CNN) can classify images within the classes the network was trained on.
 While this project will not train a CNN, a CNN will be used as a feature extractor for a Support Vector Machine (SVM).
+The goal of this project is to develop a system based on state-of-the-art techniques that is able to distinguish plastic and animals in images.
 The tests conducted in this project show a high accuracy on the dataset that was constructed for this project, making it possible to detect images containing floating plastic.
+The resulting pipeline was able to classify images containing plastic and animals.
 There are even several test resulting in the localisation of Plastic Soup within the images, however more research is needed before this can be used as a real-world application.
 %This is the abstract... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris placerat erat vitae semper fringilla. Integer rhoncus sed libero quis hendrerit. Duis et nunc convallis, porttitor urna quis, ultrices nunc. Ut quis ornare neque. Vivamus rutrum nunc arcu, ac pretium nulla lobortis ac. Duis a lectus ex. Fusce eget nulla at metus commodo posuere. Proin et velit sed augue interdum lobortis. Mauris ut nisi suscipit purus dictum rutrum vitae non erat. Nulla non semper turpis, nec eleifend mi. Proin ut bibendum est, quis auctor ante.
 \end{abstract}
@@ -57,22 +60,24 @@ $\,$
 \fi
 
 \input{Report/sections/intro.tex}
-\ifx\showpbreak\undefined \clearpage \fi
+%\ifx\showpbreak\undefined \clearpage \fi
 
 \input{Report/sections/theory.tex}
 \ifx\showpbreak\undefined \clearpage \fi
+%\clearpage
 
 \input{Report/sections/data.tex}
 \ifx\showpbreak\undefined \clearpage \fi
+%\clearpage
 
 \input{Report/sections/method.tex}
-\ifx\showpbreak\undefined \clearpage \fi
+%\ifx\showpbreak\undefined \clearpage \fi
 
 \input{Report/sections/results.tex}
-\ifx\showpbreak\undefined \clearpage \fi
-
-%\input{Report/sections/conclusion.tex}
 %\ifx\showpbreak\undefined \clearpage \fi
+
+%-%\input{Report/sections/conclusion.tex}
+%-%\ifx\showpbreak\undefined \clearpage \fi
 
 \input{Report/sections/discussion.tex}
 %\ifx\showpbreak\undefined \clearpage \fi

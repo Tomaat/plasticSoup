@@ -24,48 +24,66 @@ The accuracy shown in this section is calculated by dividing the correct labelle
 \frac{\#(Outcome_{True}\,and\,Label_{True})+\#(Outcome_{False}\,and\,Label_{False})}{\#tested\,images}
 \]
 
-The time the training and testing of the SVM took was calculated by using the difference in \textit{System time} from beginning and finishing.
+The time the training and testing of the SVM took was calculated by using the difference in \textit{System time} from start to finish of a run.
 Because the data from the CNN was saved on a hard drive and imported in RAM, that time is not included in these tests.
 
-Figure \ref{fig:c14} shows how each of the SVM model performs and what time it took to train and test.
+Figure \ref{fig:c14} shows how each of the SVM models perform and what time it took to train and test.
 All these tests were fitted on the data of the under-water viewpoint.
 The blue dots represent the accuracy, which can be read out on the left y-axis.
 The green and red bars represent time taken to train and test respectively, that can be read out on the right y-axis.
 Each instance on the x-axis is one of the twenty different hyperplanes.
-The graphs shows how the accuracy increases with larger train-sets. However, the RBF kernel -- irrespectively to $\gamma$ -- never reaches a satisfactory accuracy, while needing much time to train. On the other hand, the linear kernel shows a high accuracy while using a small amount of time to train and test. The polynomial kernel shows a decrease in accuracy with higher degrees.
+The graphs show how the accuracy increases with larger train-sets. However, the RBF kernel -- irrespectively to $\gamma$ -- never reaches a satisfactory accuracy, while needing much time to train. On the other hand, the linear kernel shows a high accuracy while using a small amount of time to train and test. The polynomial kernel shows a decrease in accuracy with higher degrees.
 
 In figure \ref{fig:lin1} the results of the orders of magnitude of the train size are shown when a linear SVM was used. The figure consists of two graphs, the left one showing the accuracy on each class individually and the total accuracy, the right one showing the time taken to test and train. The x-axis shows the size of the train-set on a logarithmic scale.
 In other words, the first column of the first four graphs is plotted in a single image, only using a different set of test-data.
 This figure shows how the accuracy of the individual classes is higher than the combination. It shows an increase in accuracy with larger train-sets while also increasing the time needed to train.
 
-Figure \ref{fig:lin2} shows a graph of the final model, this is moreover a linear SVM tested on several orders of magnitude of train data.
+\ifx\showmixi\undefined
+In figure \ref{fig:lin3} a test that accounts for possible overfitting was executed. These tests were trained on one train-set of one of both viewpoints, and tested on the test-set of the other viewpoint. These graphs show a low accuracy for recognising the animal class and therefore a low accuracy on both. The plastic class however does shows a better accuracy between the 70\% and 90\%.
+\fi
+
+Figure \ref{fig:lin2} shows a graph of the final model, this is also a linear SVM tested on several orders of magnitude of train data.
 The tests in this figure were conducted on a combination of both viewpoints.
 These results show the same trend as the graphs in figure \ref{fig:lin1}.
 
 \begin{figure}%[h!tb]
 \centering
 \ifx\showfig\undefined
-\input{graphs/c14.tex} 
+\input{graphs/c14.tex}
+\vspace{-.2cm}
 \input{graphs/c140.tex}
+\vspace{-.2cm}
 \input{graphs/c1400.tex}
+\vspace{-.2cm}
 \input{graphs/c14000.tex} \fi
 \caption{Outcome of the different parameters of the SVM trained on different slices of train-data and tested on the validation-set. The linear kernel has one of the highest accuracies, while using the least time to train. Opposing to the trend of the RBF kernel}
 \label{fig:c14}
 \end{figure}
 
+
 \begin{figure}%[h!tb]
 \centering
 \ifx\showfig\undefined
 \input{graphs/lin1.tex} \fi
-\caption{Graph of time and accuracy of a linear SVM on different sizes data of the under water viewpoint. The test-data consisted of 4123 images. Large datasets show a high accuracy, however even small amounts of data show satisfying results.}
+\caption{Graph of time and accuracy of a linear SVM on different sizes of data from the under water viewpoint. The test-data consisted of 4.123 images. Large datasets show a high accuracy, however even small amounts of data show satisfying results.}
 \label{fig:lin1}
 \end{figure}
+
+\ifx\showmixi\undefined
+\begin{figure}%[h!tb]
+\centering
+\ifx\showfig\undefined
+\input{graphs/lin3.tex} \fi
+\caption{Graph of time and accuracy of a linear SVM on different sizes of data. The test set and train set came from the different datasets. The animal class does not gain high accuracy, the plastic class does.}
+\label{fig:lin3}
+\end{figure}
+\fi
 
 \begin{figure}%[h!tb]
 \centering
 \ifx\showfig\undefined
 \input{graphs/lin2.tex} \fi
-\caption{Graph of time and accuracy of a linear SVM on different sizes data of the under water viewpoint. The test-data consisted of 18583 images. The same trend as the graphs in figure \ref{fig:lin1} is seen.}
+\caption{Graph of time and accuracy of a linear SVM on different sizes of data from a set of mixed images of the above and below water viewpoint. The test-data consisted of 18.583 images. The same trend as the graphs in figure \ref{fig:lin1} is seen.}
 \label{fig:lin2}
 \end{figure}
 
@@ -74,13 +92,13 @@ These results show the same trend as the graphs in figure \ref{fig:lin1}.
 As stated in section \ref{sec:Method-location}, the localisation of plastic within the image could not be evaluated truly.
 However, several images were pulled through the pipeline and the results can be seen in figure \ref{fig:sub-matrix}.
 The middle column in the figure shows the tested images.
-The more red it shows in the figure on the right, the more confidence the program has in detecting plastic on that location in the image.
+The more red is showing in the figure on the right, the more confidence the program has in detecting plastic on that location in the image.
 The images on the left represent the same with the greenness for locating animals.
 Testing the localisation took a considerable amount of time, because a run through the pipeline could take up to $5$ seconds per sub-image.
 Because these tests were conducted on a pyramid-segmentation of depth 4, a total amount of 341 images were run through the pipeline per test.
 
 The results show that the confidence of detecting plastic or animals within the image does not always agree with what is shown in the original image.
-However, because the lack of annotation, there is no manner in which these results can evaluated thoroughly.
+However, because of the lack of annotation, there is no manner in which these results can evaluated more thoroughly.
 
 \begin{figure}%[h!tb]
 \centering

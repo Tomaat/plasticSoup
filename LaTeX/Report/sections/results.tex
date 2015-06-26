@@ -38,7 +38,7 @@ In other words, the first column of the first four graphs is plotted in a single
 This figure shows how the accuracy of the individual classes is higher than the combination. It shows an increase in accuracy with larger train-sets while also increasing the time needed to train.
 
 \ifx\showmixi\undefined
-In figure \ref{fig:lin3} a test that accounts for possible overfitting was executed. These tests were trained on one train-set of one of both viewpoints, and tested on the test-set of the other viewpoint. These graphs show a low accuracy for recognising the animal class and therefore a low accuracy on both. The plastic class however does shows a better accuracy between the 70\% and 90\%.
+In figure \ref{fig:lin3} a test that accounts for possible overfitting was executed. These tests were trained on the train-set of one of both viewpoints, and tested on the test-set of the other viewpoint. These graphs show a low accuracy for recognising the animal class and therefore a low accuracy on both. The plastic class however does shows a better accuracy between the 70\% and 90\%.
 \fi
 
 Figure \ref{fig:lin2} shows a graph of the final model, this is also a linear SVM tested on several orders of magnitude of train data.
@@ -49,13 +49,13 @@ These results show the same trend as the graphs in figure \ref{fig:lin1}.
 \centering
 \ifx\showfig\undefined
 \input{graphs/c14.tex}
-\vspace{-.2cm}
+\vspace{-.1cm}
 \input{graphs/c140.tex}
-\vspace{-.2cm}
+\vspace{-.1cm}
 \input{graphs/c1400.tex}
-\vspace{-.2cm}
+\vspace{-.1cm}
 \input{graphs/c14000.tex} \fi
-\caption{Outcome of the different parameters of the SVM trained on different slices of train-data and tested on the validation-set. The linear kernel has one of the highest accuracies, while using the least time to train. Opposing to the trend of the RBF kernel}
+\caption{Outcome of the different parameters of the SVM trained on different slices of train-data and tested on the validation-set. The linear kernel has one of the highest accuracies, while using the least time to train. Opposing to the trend of the RBF kernel.}
 \label{fig:c14}
 \end{figure}
 
@@ -147,6 +147,6 @@ However, because of the lack of annotation, there is no manner in which these re
 	\end{tabular}
 \fi
 \captionsetup{width=.8\textwidth}
-\caption{Example of outcome of running an image through the segmented image pipeline. Green locates the animals and red the plastic}
+\caption{Example of outcome of running an image through the segmented image pipeline. Green locates the animals and red the plastic.}
 \label{fig:sub-matrix}
 \end{figure}

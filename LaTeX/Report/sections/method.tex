@@ -13,7 +13,7 @@ In this project, the choice was made to use Caffe \citep{jia2014caffe} because t
 Moreover, it has a large community maintaining and developing, can run both on CPU and GPU and has an interface to \texttt{Python}.
 
 The Caffe framework has several pre-trained CNNs.
-In this project the Caffenet network was used, which is an implementation of Alexnet \citep{krizhevsky2012imagenet}. Caffenet is trained on the \textit{ilsvrc12} dataset, however in contrary to Alexnet, the order of pooling and normalisation is swapped.
+In this project the Caffenet network was used, which is an implementation of Alexnet \citep{krizhevsky2012imagenet}. Caffenet is trained on the \textit{ilsvrc12} dataset and, in contrary to Alexnet, has the order of pooling and normalisation is swapped.
 
 The output of Caffenet is a $1\times1.000$ probability vector, representing the confidence of the respective class.
 However, the second-to-last layer of the network is used as feature-vector. This layer is a $10\times4.096$ vector; $10$ rows because the network uses five overlapping `sub-images' (four corners and one centre) and their mirrored image, to improve accuracy.
@@ -25,7 +25,7 @@ Tests were conducted by training the SVM on the test-data, and using the validat
 Figure \ref{fig:pipeline} shows a visualisation of the pipeline used in this project.
 
 Three different types of hyperplanes were used.
-A polygonal plane was tested with degrees of $2$ till $9$.
+A polynomial plane was tested with degrees of $2$ till $9$.
 An RBF plane was tested with gammas of $0.0$ till $1.0$ with steps of $0.1$.
 Lastly a linear plane was tested.
 Each of the twenty SVM models were trained on part of the train-set, with intervals of order of magnitude; the sizes of the train-set were: 14, 140, 1.400 and 14.000 images.
@@ -56,7 +56,6 @@ When the system developed in this project is eventually used for practical appli
 
 To distinguish blobs in an image, several techniques could be used; however, as a prove of feasibility, no complex algorithms were used in this project.
 A new piece of code was written that segmented the image in sections and treated each of them as an image in the original pipeline.
-
 The outcome of each segmented piece of the image was cumulated to show the confidence of detection of the classes at the given location in the image.
 Figure \ref{fig:locpip} shows the adaptation to the original pipeline that results in the localisation-pipeline.
 Because there was no labelled data of these segmented images, the evaluation could not be done on a large scale.
@@ -68,7 +67,7 @@ However, in section \ref{sec:Results-location} the outcome of several tests is s
 \ifx\showfig\undefined
 \input{graphs/locpip.tex}
 \fi
-\caption{Schematics of the second pipeline for localisation. The image is segmented into pieces. Each piece is pulled through the original pipeline, resulting in images with intensity according to the output of the SVM. All the pieces are added together at the pixel-location, which results in an image showing the confidence of the location of plastic or animals}
+\caption{Schematics of the second pipeline for localisation. The image is segmented into pieces. Each piece is pulled through the original pipeline, resulting in images with intensity according to the output of the SVM. All the pieces are added together at the pixel-location, which results in an image showing the confidence of the location of plastic or animals.}
 \label{fig:locpip}
 \end{figure}
 

@@ -11,7 +11,7 @@ On these features a SVM classifier was trained and tested against the labels of 
 
 %==conclusie
 %\paragraph{}
-As shown in section \ref{sec:Results}, the best kernel for an SVM in this dataset is a linear hyperplane. This kernel had a high accuracy, even while being trained on small amounts of data, while not using much time to train or test.
+As shown in section \ref{sec:Results}, the best kernel for an SVM in this dataset is a linear hyperplane. This kernel had a high accuracy, even when being trained on small amounts of data, while not using much time to train or test.
 The test of figure \ref{fig:lin1} shows an accuracy on plastic and animal detection with an error of less than 1\permil.
 Therefore it can be concluded that this method, using the second-to-last layer of a pre-trained Convolutional Neural Network on an SVM, makes it possible to detect Plastic Soup in images.
 
@@ -56,8 +56,7 @@ Firstly the used dataset consisted of many similar frames, which increased the c
 Furthermore, the classes that were trained on were not fairly distributed in the dataset.
 An improved dataset containing more variance of images and fairer distributed classes, could be used to improve the results of this project.
 This dataset should also contain labels on parts of the images, which could improve the training and testing of the localisation of plastic within images.
-
-This project did not research the usage of different CNNs.
+Another possible improvement is researching the usage of different CNNs.
 A standard CNN was used to construct the feature-vector; no time was spent on researching if other networks would perform better.
 Not only was assumed that the CNN worked properly and was therefore not further tested, also the parameters with which the SVM was tested were not statistical analysed; no cross-fold validation was conducted.
 Nevertheless, as the accuracy of the pipeline was close to 100\%, no more time was taken to research these parameters than necessary.
